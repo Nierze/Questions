@@ -1,0 +1,515 @@
+{
+  "Questionnaire name": "Advanced Functional Programming Concepts",
+  "Questions": [
+    {
+      "Question": "Which of the following is NOT a characteristic of pure functional programming languages?",
+      "Answers": {
+        "a": "Referential transparency",
+        "b": "Mutable state",
+        "c": "First-class functions",
+        "d": "Recursion as primary control structure"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In functional programming, what does 'referential transparency' mean?",
+      "Answers": {
+        "a": "All functions must have explicit return types",
+        "b": "Function calls can be replaced with their return values without changing program behavior",
+        "c": "All references must be properly documented",
+        "d": "Functions must reference global variables transparently"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which data structure is most commonly used in functional programming languages due to its immutability?",
+      "Answers": {
+        "a": "Arrays",
+        "b": "Hash tables",
+        "c": "Linked lists",
+        "d": "Binary trees"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the primary reason for avoiding side effects in functional programming?",
+      "Answers": {
+        "a": "To make code easier to debug",
+        "b": "To improve execution speed",
+        "c": "To make code easier to reason about and test",
+        "d": "To reduce memory usage"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "In the context of lazy evaluation, what is a 'thunk'?",
+      "Answers": {
+        "a": "A data structure that holds previously computed values",
+        "b": "A syntax error in functional code",
+        "c": "A placeholder for a computation that hasn't been performed yet",
+        "d": "A function that contains only pure operations"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which of the following languages is NOT primarily functional?",
+      "Answers": {
+        "a": "Haskell",
+        "b": "F#",
+        "c": "Ruby",
+        "d": "Clojure"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is currying in functional programming?",
+      "Answers": {
+        "a": "A technique to optimize recursive functions",
+        "b": "Converting a function that takes multiple arguments into a sequence of functions each taking a single argument",
+        "c": "Adding spices to make code more readable",
+        "d": "A way to implement loops without mutation"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which concept in functional programming allows for working with computations that may or may not result in a value?",
+      "Answers": {
+        "a": "Functors",
+        "b": "Lambda calculus",
+        "c": "Monads",
+        "d": "Pattern matching"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What distinguishes a higher-order function from other functions?",
+      "Answers": {
+        "a": "It contains more lines of code",
+        "b": "It has greater time complexity",
+        "c": "It takes at least one function as input or returns a function as output",
+        "d": "It can only be defined at the module level"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which statement about lambda calculus is correct?",
+      "Answers": {
+        "a": "It requires mutable state to be Turing complete",
+        "b": "It forms the theoretical foundation of functional programming",
+        "c": "It was developed in the 1970s for object-oriented programming",
+        "d": "It cannot express recursive functions"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In Haskell, what is the type of the function 'map'?",
+      "Answers": {
+        "a": "(a -> b) -> [a] -> [b]",
+        "b": "[a] -> [a]",
+        "c": "(a -> a) -> a",
+        "d": "a -> [a]"
+      },
+      "Correct Answer": "a"
+    },
+    {
+      "Question": "Which of the following accurately describes tail recursion optimization?",
+      "Answers": {
+        "a": "Converting all recursive functions to loops",
+        "b": "A compiler technique that eliminates stack growth for recursive functions where the recursive call is the last operation",
+        "c": "Making the recursion depth fixed at compile time",
+        "d": "Using auxiliary data structures to improve recursive performance"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which property of functional programs makes them particularly suitable for parallel execution?",
+      "Answers": {
+        "a": "Dynamic typing",
+        "b": "Absence of mutable state and side effects",
+        "c": "Use of recursion instead of loops",
+        "d": "Garbage collection"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is the purpose of pattern matching in functional programming?",
+      "Answers": {
+        "a": "To improve code readability only",
+        "b": "To implement regular expressions",
+        "c": "To decompose data structures and handle different cases based on structure",
+        "d": "To match variable names with their types"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What feature of ML and Haskell allows the compiler to guarantee type correctness without requiring explicit type declarations?",
+      "Answers": {
+        "a": "Dynamic typing",
+        "b": "Type erasure",
+        "c": "Type inference",
+        "d": "Duck typing"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "In the context of monads, what does the 'bind' operation (>>=) do?",
+      "Answers": {
+        "a": "Combines two monads into one",
+        "b": "Creates a monad from a pure value",
+        "c": "Applies a function that returns a monad to a monad, handling the nested structure",
+        "d": "Extracts a pure value from a monad"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the concept of 'persistent data structures' in functional programming?",
+      "Answers": {
+        "a": "Data structures stored permanently on disk",
+        "b": "Data structures that preserve previous versions when modified",
+        "c": "Data structures that cannot be garbage collected",
+        "d": "Data structures with constant access time"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which of these is a valid example of a functor in functional programming?",
+      "Answers": {
+        "a": "A monad without bind operation",
+        "b": "An iterator in an imperative language",
+        "c": "A data structure that implements a map function",
+        "d": "Any function that takes two arguments"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the primary purpose of the Either monad?",
+      "Answers": {
+        "a": "To represent computations with two possible return types (usually success/error)",
+        "b": "To choose between two different functions to execute",
+        "c": "To combine two monads into a single operation",
+        "d": "To ensure either lazy or strict evaluation"
+      },
+      "Correct Answer": "a"
+    },
+    {
+      "Question": "In functional programming, what is function composition?",
+      "Answers": {
+        "a": "Writing multiple functions in the same file",
+        "b": "Combining simple functions to build more complex ones",
+        "c": "Splitting a complex function into simpler ones",
+        "d": "Using lambda expressions inside named functions"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What differentiates lazy evaluation from strict evaluation?",
+      "Answers": {
+        "a": "Lazy evaluation always uses less memory",
+        "b": "Strict evaluation always executes faster",
+        "c": "Lazy evaluation defers computation until the result is needed",
+        "d": "Strict evaluation works only with pure functions"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which language feature allows Haskell to handle infinite data structures?",
+      "Answers": {
+        "a": "Garbage collection",
+        "b": "Lazy evaluation",
+        "c": "Static typing",
+        "d": "Monadic I/O"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What are algebraic data types primarily used for in functional programming?",
+      "Answers": {
+        "a": "Mathematical calculations",
+        "b": "Creating composite data structures from simpler ones",
+        "c": "Implementing object-oriented inheritance",
+        "d": "Optimizing memory usage"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In functional programming, what is a pure function?",
+      "Answers": {
+        "a": "A function written in a purely functional language",
+        "b": "A function that always returns boolean values",
+        "c": "A function that, given the same input, always produces the same output and has no side effects",
+        "d": "A function with no parameters"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which statement about functional and imperative programming is true?",
+      "Answers": {
+        "a": "Functional programs are always shorter than equivalent imperative programs",
+        "b": "Imperative programming focuses on 'what to do' while functional focuses on 'how to do it'",
+        "c": "Imperative programming involves changing state while functional programming avoids it",
+        "d": "Functional programming cannot express certain algorithms that imperative programming can"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the relationship between Church encoding and functional programming?",
+      "Answers": {
+        "a": "Church encoding is used to implement OOP features in functional languages",
+        "b": "Church encoding demonstrates how data and control structures can be represented using only functions",
+        "c": "Church encoding is a technique for optimizing functional code",
+        "d": "Church encoding is a way to represent XML in functional languages"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which concept is critical for implementing effectful operations (like I/O) in purely functional languages like Haskell?",
+      "Answers": {
+        "a": "Dynamic typing",
+        "b": "Monads",
+        "c": "Imperative blocks",
+        "d": "Exception handling"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is point-free style in functional programming?",
+      "Answers": {
+        "a": "Writing functions that don't use decimal points",
+        "b": "Writing functions without explicitly mentioning the data arguments they operate on",
+        "c": "A coding style that avoids using function composition",
+        "d": "Programming without specific endpoints or goals"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In the context of functional programming, what does 'lifting' a function typically mean?",
+      "Answers": {
+        "a": "Moving it to a higher scope level",
+        "b": "Converting it from imperative to functional style",
+        "c": "Adapting a function to work with wrapped values (like in functors or monads)",
+        "d": "Increasing its performance"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the primary difference between foldl and foldr in functional languages?",
+      "Answers": {
+        "a": "foldl works on lists while foldr works on trees",
+        "b": "foldl is tail-recursive while foldr is not necessarily so",
+        "c": "foldr can work on infinite lists in lazy languages while foldl cannot",
+        "d": "Both B and C are correct"
+      },
+      "Correct Answer": "d"
+    },
+    {
+      "Question": "What is the difference between an applicative functor and a regular functor?",
+      "Answers": {
+        "a": "Applicative functors can only be used in mobile applications",
+        "b": "Applicative functors can apply functions wrapped in the same context to wrapped values",
+        "c": "Regular functors support more operations than applicative functors",
+        "d": "Applicative functors are specific to Haskell, while regular functors are found in all functional languages"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which feature of functional languages makes function calls more predictable in concurrent environments?",
+      "Answers": {
+        "a": "Dynamic dispatch",
+        "b": "Reference counting",
+        "c": "Immutability and lack of side effects",
+        "d": "Automatic memory management"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is partial application in functional programming?",
+      "Answers": {
+        "a": "Applying a function to only some of its arguments, resulting in a function that takes the remaining arguments",
+        "b": "Applying a function only to part of a data structure",
+        "c": "Applying a function only some of the time based on runtime conditions",
+        "d": "Implementing only part of a function's logic, leaving the rest as stubs"
+      },
+      "Correct Answer": "a"
+    },
+    {
+      "Question": "In functional programming, what is a closure?",
+      "Answers": {
+        "a": "A way to close or terminate a function execution",
+        "b": "A function bundled with references to its surrounding state",
+        "c": "A data structure that cannot be modified after creation",
+        "d": "A compiler optimization technique"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which data structure would be most efficient for frequent prepending operations in a functional language?",
+      "Answers": {
+        "a": "Array",
+        "b": "Doubly-linked list",
+        "c": "Singly-linked list",
+        "d": "Binary search tree"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What does the term 'catamorphism' refer to in functional programming?",
+      "Answers": {
+        "a": "A type of exception handling",
+        "b": "A generalized fold operation that breaks down data structures",
+        "c": "A method of constructing complex data types",
+        "d": "A technique for function memoization"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which of these best describes the trade-off when using immutable data structures?",
+      "Answers": {
+        "a": "Higher memory usage but safer concurrent access",
+        "b": "Slower execution but more readable code",
+        "c": "Faster execution but more complex algorithms",
+        "d": "Lower memory usage but more complex garbage collection"
+      },
+      "Correct Answer": "a"
+    },
+    {
+      "Question": "What is the main advantage of using continuation-passing style?",
+      "Answers": {
+        "a": "It makes the code easier to read",
+        "b": "It gives complete control over the flow of execution",
+        "c": "It reduces memory usage",
+        "d": "It eliminates the need for functions"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "How does functional programming typically handle state changes?",
+      "Answers": {
+        "a": "By using hidden mutable variables",
+        "b": "By passing and returning modified versions of data",
+        "c": "By avoiding stateful programs entirely",
+        "d": "By using singleton objects"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is a key characteristic of the Actor model often used with functional programming?",
+      "Answers": {
+        "a": "Actors share memory and communicate through it",
+        "b": "Actors can directly modify each other's state",
+        "c": "Actors are isolated and communicate only through message passing",
+        "d": "Actors must be implemented as pure functions"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which language pioneered the concept of pattern matching that's now common in many functional languages?",
+      "Answers": {
+        "a": "Lisp",
+        "b": "ML",
+        "c": "JavaScript",
+        "d": "Smalltalk"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is the relationship between functional programming and the lambda calculus?",
+      "Answers": {
+        "a": "They're entirely unrelated concepts from different fields",
+        "b": "Lambda calculus is a mathematical formalism that underlies functional programming",
+        "c": "Lambda calculus is a specific language feature in functional programming languages",
+        "d": "Functional programming was developed to replace lambda calculus"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which programming paradigm is LISP primarily associated with?",
+      "Answers": {
+        "a": "Object-oriented programming",
+        "b": "Functional programming",
+        "c": "Imperative programming",
+        "d": "Logic programming"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What makes a language 'purely' functional as opposed to just supporting functional programming?",
+      "Answers": {
+        "a": "It has more built-in functions",
+        "b": "Its syntax is more concise",
+        "c": "It doesn't allow side effects or mutable state",
+        "d": "It's implemented in another functional language"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "In functional programming, what are 'lenses' used for?",
+      "Answers": {
+        "a": "Debugging and inspecting function internals",
+        "b": "Composable getters and setters for immutable data structures",
+        "c": "Focusing execution on specific parts of a program",
+        "d": "Magnifying code for better readability"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which of these languages has the strongest emphasis on immutability?",
+      "Answers": {
+        "a": "Python",
+        "b": "JavaScript",
+        "c": "Haskell",
+        "d": "C++"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is memoization in functional programming?",
+      "Answers": {
+        "a": "A process of documenting function behavior",
+        "b": "A technique to cache function results for given inputs to avoid redundant calculations",
+        "c": "A method for converting functions to loops",
+        "d": "A way to implement memory management"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "How does functional programming typically handle errors compared to imperative programming?",
+      "Answers": {
+        "a": "By using exceptions and try-catch blocks",
+        "b": "By returning error codes as integers",
+        "c": "By using types like Either, Option/Maybe to represent success or failure",
+        "d": "By crashing the program"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the primary reason many functional languages use immutable data structures?",
+      "Answers": {
+        "a": "To save memory",
+        "b": "To make the language easier to implement",
+        "c": "To avoid bugs related to unexpected state changes",
+        "d": "To force programmers to use recursion"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which of these languages was NOT influenced by functional programming concepts?",
+      "Answers": {
+        "a": "JavaScript",
+        "b": "Python",
+        "c": "COBOL",
+        "d": "C#"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the Y combinator used for in functional programming?",
+      "Answers": {
+        "a": "Memory optimization",
+        "b": "Implementing recursion in a language without explicit recursion support",
+        "c": "Parallel processing",
+        "d": "Type checking"
+      },
+      "Correct Answer": "b"
+    }
+  ]
+}

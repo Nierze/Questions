@@ -372,10 +372,10 @@
       "Correct Answer": "b"
     },
     {
-      "Question": "The `factors n = [i | i <- [1..n \`div\` 2], n \`mod\` i == 0]` Haskell function uses list comprehension to find factors. Why does it iterate up to `n \`div\` 2`?",
+      "Question": "The `factors n = [i | i <- [1..n \\`div\\` 2], n \\`mod\\` i == 0]` Haskell function uses list comprehension to find factors. Why does it iterate up to `n \\`div\\` 2`?",
       "Answers": {
         "a": "To exclude the number `n` itself from its list of factors.",
-        "b": "Because any factor larger than `n \`div\` 2` would imply a co-factor smaller than 2 (i.e., 1), which is already covered.",
+        "b": "Because any factor larger than `n \\`div\\` 2` would imply a co-factor smaller than 2 (i.e., 1), which is already covered.",
         "c": "To ensure the list of factors is always even in length.",
         "d": "This is an arbitrary limit to improve performance, potentially missing some factors."
       },

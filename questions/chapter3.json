@@ -1,490 +1,495 @@
 {
-"Questionnaire name": "Describing Syntax and Semantics",
-"Questions": [
-{
-"Question": "What does 'syntax' refer to in the context of programming languages?",
-"Answers": {
-"a": "The meaning of program units",
-"b": "The form or structure of expressions, statements, and program units",
-"c": "The execution of program statements",
-"d": "The underlying logic of a program"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What is the primary purpose of semantics in a programming language?",
-"Answers": {
-"a": "To define the structure of the language",
-"b": "To specify how code is written",
-"c": "To define the meaning of the expressions, statements, and program units",
-"d": "To optimize code execution"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "Which of the following is considered a 'lexeme'?",
-"Answers": {
-"a": "A program",
-"b": "A sentence",
-"c": "An identifier",
-"d": "The symbol '*'"
-},
-"Correct Answer": "d"
-},
-{
-"Question": "What is a 'token' in programming language terminology?",
-"Answers": {
-"a": "A sequence of characters",
-"b": "A category of lexemes",
-"c": "A syntactic rule",
-"d": "An individual character"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What is the role of a 'recognizer' in formal language definition?",
-"Answers": {
-"a": "To generate sentences of a language",
-"b": "To translate code into machine language",
-"c": "To read input strings and determine if they belong to the language",
-"d": "To execute program instructions"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "Which of the following is an example of a 'generator'?",
-"Answers": {
-"a": "A compiler's syntax analyzer",
-"b": "A parser",
-"c": "A device that creates sentences of a language",
-"d": "A code optimizer"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "What does BNF stand for?",
-"Answers": {
-"a": "Binary Normal Form",
-"b": "Backus-Naur Form",
-"c": "Basic Network Function",
-"d": "Block Node Function"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "Who developed Context-Free Grammars?",
-"Answers": {
-"a": "John Backus",
-"b": "Noam Chomsky",
-"c": "Jenhui Chen",
-"d": "Grace Hopper"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "In BNF, what are 'nonterminal symbols' also called?",
-"Answers": {
-"a": "Lexemes",
-"b": "Tokens",
-"c": "Syntactic variables",
-"d": "Terminals"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "Which of the following is NOT a component of a BNF rule?",
-"Answers": {
-"a": "Left-hand side (LHS)",
-"b": "Right-hand side (RHS)",
-"c": "Terminal symbols",
-"d": "Semantic actions"
-},
-"Correct Answer": "d"
-},
-{
-"Question": "What is 'derivation' in the context of formal grammars?",
-"Answers": {
-"a": "The process of defining a grammar",
-"b": "The set of all sentences in a language",
-"c": "A repeated application of rules, starting with the start symbol and ending with a sentence",
-"d": "The structure of a parse tree"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "When is a rule considered 'recursive'?",
-"Answers": {
-"a": "When it has multiple terminal symbols",
-"b": "When its LHS appears in its RHS",
-"c": "When it defines a token",
-"d": "When it is used to describe lists"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What is a 'sentential form'?",
-"Answers": {
-"a": "A rule in a grammar",
-"b": "A string of symbols in a derivation",
-"c": "A sequence of tokens",
-"d": "A parse tree"
-},
-{
-"Correct Answer": "b"
-},
-{
-"Question": "What is a 'sentence' in formal language terms?",
-"Answers": {
-"a": "Any string of symbols",
-"b": "A sentential form with only terminal symbols",
-"c": "The start symbol of a grammar",
-"d": "A nonterminal symbol"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What characterizes a 'leftmost derivation'?",
-"Answers": {
-"a": "The rightmost nonterminal is expanded first",
-"b": "The derivation results in the shortest possible sentence",
-"c": "The leftmost nonterminal in each sentential form is the one that is expanded",
-"d": "The derivation is unique"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "What does a 'parse tree' represent?",
-"Answers": {
-"a": "The lexical structure of a program",
-"b": "A hierarchical representation of a derivation",
-"c": "The flow of control in a program",
-"d": "The memory allocation of variables"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "When is a grammar considered 'ambiguous'?",
-"Answers": {
-"a": "When it has too many rules",
-"b": "When it generates a sentence that has two or more distinct parse trees",
-"c": "When it is difficult to understand",
-"d": "When it cannot generate all sentences of the language"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "How is operator precedence typically handled in a grammar to avoid ambiguity?",
-"Answers": {
-"a": "By using parentheses in the grammar rules",
-"b": "By assigning precedence levels outside the grammar",
-"c": "By using the parse tree to indicate precedence levels",
-"d": "Precedence is not relevant to grammar"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "What does 'associativity' of operators refer to?",
-"Answers": {
-"a": "The order of operations in an expression",
-"b": "The grouping of operands with operators",
-"c": "The precedence of operators",
-"d": "The type of operands"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "In Extended BNF (EBNF), what do square brackets '[ ]' indicate?",
-"Answers": {
-"a": "Repetition",
-"b": "Optional parts",
-"c": "Alternative parts",
-"d": "Terminal symbols"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "In EBNF, what do braces '{ }' signify?",
-"Answers": {
-"a": "Optional parts",
-"b": "Alternative parts",
-"c": "Repetitions (zero or more)",
-"d": "Grouping"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "What is the purpose of Attribute Grammars?",
-"Answers": {
-"a": "To describe the dynamic semantics of a language",
-"b": "To add semantic information to context-free grammars",
-"c": "To define the lexical structure of a language",
-"d": "To parse code more efficiently"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What is NOT a primary use of Attribute Grammars?",
-"Answers": {
-"a": "Static semantics specification",
-"b": "Compiler design (static semantics checking)",
-"c": "Dynamic memory allocation",
-"d": "Adding semantic info to parse trees"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "In Attribute Grammars, what are 'synthesized attributes'?",
-"Answers": {
-"a": "Attributes that are passed down the parse tree",
-"b": "Attributes that are computed from the children of a node",
-"c": "Attributes of terminal symbols",
-"d": "Attributes that are used for error checking"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What are 'inherited attributes' in Attribute Grammars?",
-"Answers": {
-"a": "Attributes that are computed from the children of a node",
-"b": "Attributes that are passed down the parse tree from parent to children",
-"c": "Attributes of leaf nodes",
-"d": "Attributes that define the syntax"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What are 'intrinsic attributes' in Attribute Grammars?",
-"Answers": {
-"a": "Attributes of nonterminal symbols",
-"b": "Attributes computed by semantic rules",
-"c": "Initial attributes on the leaves of a parse tree",
-"d": "Attributes used for type checking"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "If all attributes in an Attribute Grammar are synthesized, how can the tree be decorated?",
-"Answers": {
-"a": "Only in top-down order",
-"b": "Only in bottom-up order",
-"c": "In any order",
-"d": "Using a combination of top-down and bottom-up"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What is 'semantics' in programming languages?",
-"Answers": {
-"a": "The syntax of the language",
-"b": "The way code is formatted",
-"c": "The meaning of the program",
-"d": "The speed of execution"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "Which method describes the meaning of a program by executing its statements on a machine?",
-"Answers": {
-"a": "Axiomatic semantics",
-"b": "Denotational semantics",
-"c": "Operational semantics",
-"d": "Attribute grammars"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "Why is a 'virtual machine' often used in operational semantics for high-level languages?",
-"Answers": {
-"a": "To increase execution speed",
-"b": "To make the semantics machine-dependent",
-"c": "To avoid the expense of a hardware interpreter and the machine-dependent problems of a software interpreter",
-"d": "To simplify the syntax analysis"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "What is a disadvantage of using a software pure interpreter for operational semantics?",
-"Answers": {
-"a": "It is too expensive",
-"b": "It makes actions easy to understand",
-"c": "It results in machine-independent definitions",
-"d": "The detailed characteristics of the computer would make actions difficult to understand and the definition would be machine-dependent"
-},
-"Correct Answer": "d"
-},
-{
-"Question": "What is the purpose of 'axiomatic semantics'?",
-"Answers": {
-"a": "To define the execution order of statements",
-"b": "To formally verify program correctness",
-"c": "To describe the syntax of a program",
-"d": "To optimize code"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What is an 'assertion' in axiomatic semantics?",
-"Answers": {
-"a": "A statement that is always true",
-"b": "An expression that states the relationships and constraints among variables",
-"c": "A type declaration",
-"d": "A loop invariant"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "In axiomatic semantics, what is a 'precondition'?",
-"Answers": {
-"a": "An assertion that follows a statement",
-"b": "An assertion that precedes a statement",
-"c": "The result of a computation",
-"d": "A loop condition"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What is a 'postcondition' in axiomatic semantics?",
-"Answers": {
-"a": "An assertion that precedes a statement",
-"b": "An assertion that follows a statement",
-"c": "The initial state of variables",
-"d": "A function's return value"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What is a 'weakest precondition'?",
-"Answers": {
-"a": "The most restrictive precondition",
-"b": "The least restrictive precondition that guarantees the postcondition",
-"c": "A precondition that is always true",
-"d": "A precondition that is implied by the postcondition"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What is the form of a pre- and post-condition in axiomatic semantics?",
-"Answers": {
-"a": "statement {P} {Q}",
-"b": "{P} statement {Q}",
-"c": "{P, Q} statement",
-"d": "statement {P, Q}"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "In the program proof process using axiomatic semantics, where does the process begin?",
-"Answers": {
-"a": "At the middle of the program",
-"b": "At the end of the program",
-"c": "At the first statement of the program",
-"d": "At the postcondition for the entire program, working backwards"
-},
-"Correct Answer": "d"
-},
-{
-"Question": "What is 'denotational semantics'?",
-"Answers": {
-"a": "A way to describe syntax",
-"b": "A method for executing programs",
-"c": "A technique for verifying program correctness",
-"d": "A method for mapping syntactic entities to mathematical objects"
-},
-"Correct Answer": "d"
-},
-{
-"Question": "What are 'mathematical objects' in denotational semantics?",
-"Answers": {
-"a": "Variables and data types",
-"b": "Functions and sets",
-"c": "Operators and expressions",
-"d": "Statements and control structures"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What is the 'state' of a program in denotational semantics?",
-"Answers": {
-"a": "The syntax of the program",
-"b": "The set of all variables and their values",
-"c": "The execution speed",
-"d": "The memory usage"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What does the 'meaning function' do in denotational semantics?",
-"Answers": {
-"a": "It translates code into machine language",
-"b": "It maps syntactic constructs to semantic values",
-"c": "It executes the program",
-"d": "It checks for syntax errors"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "Which of the following is a potential use of denotational semantics?",
-"Answers": {
-"a": "To write code faster",
-"b": "To design programming languages",
-"c": "To execute code",
-"d": "To parse code"
-},
-"Correct Answer": "b"
-},
-{
-"Question": "What is a limitation of denotational semantics?",
-"Answers": {
-"a": "It cannot be used for compiler generation",
-"b": "It is too simple",
-"c": "It is of little use to language users due to its complexity",
-"d": "It cannot handle recursion"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "Which of the following statements about BNF and context-free grammars is correct?",
-"Answers": {
-"a": "BNF is more powerful than context-free grammars",
-"b": "Context-free grammars are more readable than BNF",
-"c": "BNF and context-free grammars are equivalent meta-languages",
-"d": "BNF is used to describe semantics, while context-free grammars describe syntax"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "What is the role of an attribute grammar in describing a programming language?",
-"Answers": {
-"a": "To replace context-free grammars entirely",
-"b": "To add dynamic semantic rules",
-"c": "To provide a complete specification of both syntax and semantics",
-"d": "To add static semantic analysis to context-free grammars"
-},
-"Correct Answer": "d"
-},
-{
-"Question": "Which semantic description method is best suited for proving program correctness?",
-"Answers": {
-"a": "Operational semantics",
-"b": "Denotational semantics",
-"c": "Axiomatic semantics",
-"d": "Attribute grammars"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "Which semantic description method is based on state changes of a virtual machine?",
-"Answers": {
-"a": "Denotational semantics",
-"b": "Axiomatic semantics",
-"c": "Operational semantics",
-"d": "Attribute grammars"
-},
-"Correct Answer": "c"
-},
-{
-"Question": "Which semantic description method uses mathematical functions to model the meaning of programs?",
-"Answers": {
-"a": "Axiomatic semantics",
-"b": "Operational semantics",
-"
+  "Questionnaire name": "Describing Syntax and Semantics",
+  "Questions": [
+    {
+      "Question": "What does 'syntax' refer to in the context of programming languages?",
+      "Answers": {
+        "a": "The meaning of program units",
+        "b": "The form or structure of expressions, statements, and program units",
+        "c": "The execution of program statements",
+        "d": "The underlying logic of a program"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is the primary purpose of semantics in a programming language?",
+      "Answers": {
+        "a": "To define the structure of the language",
+        "b": "To specify how code is written",
+        "c": "To define the meaning of the expressions, statements, and program units",
+        "d": "To optimize code execution"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which of the following is considered a 'lexeme'?",
+      "Answers": {
+        "a": "A program",
+        "b": "A sentence",
+        "c": "An identifier",
+        "d": "The symbol '*'"
+      },
+      "Correct Answer": "d"
+    },
+    {
+      "Question": "What is a 'token' in programming language terminology?",
+      "Answers": {
+        "a": "A sequence of characters",
+        "b": "A category of lexemes",
+        "c": "A syntactic rule",
+        "d": "An individual character"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is the role of a 'recognizer' in formal language definition?",
+      "Answers": {
+        "a": "To generate sentences of a language",
+        "b": "To translate code into machine language",
+        "c": "To read input strings and determine if they belong to the language",
+        "d": "To execute program instructions"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which of the following is an example of a 'generator'?",
+      "Answers": {
+        "a": "A compiler's syntax analyzer",
+        "b": "A parser",
+        "c": "A device that creates sentences of a language",
+        "d": "A code optimizer"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What does BNF stand for?",
+      "Answers": {
+        "a": "Binary Normal Form",
+        "b": "Backus-Naur Form",
+        "c": "Basic Network Function",
+        "d": "Block Node Function"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Who developed Context-Free Grammars?",
+      "Answers": {
+        "a": "John Backus",
+        "b": "Noam Chomsky",
+        "c": "Jenhui Chen",
+        "d": "Grace Hopper"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In BNF, what are 'nonterminal symbols' also called?",
+      "Answers": {
+        "a": "Lexemes",
+        "b": "Tokens",
+        "c": "Syntactic variables",
+        "d": "Terminals"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which of the following is NOT a component of a BNF rule?",
+      "Answers": {
+        "a": "Left-hand side (LHS)",
+        "b": "Right-hand side (RHS)",
+        "c": "Terminal symbols",
+        "d": "Semantic actions"
+      },
+      "Correct Answer": "d"
+    },
+    {
+      "Question": "What is 'derivation' in the context of formal grammars?",
+      "Answers": {
+        "a": "The process of defining a grammar",
+        "b": "The set of all sentences in a language",
+        "c": "A repeated application of rules, starting with the start symbol and ending with a sentence",
+        "d": "The structure of a parse tree"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "When is a rule considered 'recursive'?",
+      "Answers": {
+        "a": "When it has multiple terminal symbols",
+        "b": "When its LHS appears in its RHS",
+        "c": "When it defines a token",
+        "d": "When it is used to describe lists"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is a 'sentential form'?",
+      "Answers": {
+        "a": "A rule in a grammar",
+        "b": "A string of symbols in a derivation",
+        "c": "A sequence of tokens",
+        "d": "A parse tree"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is a 'sentence' in formal language terms?",
+      "Answers": {
+        "a": "Any string of symbols",
+        "b": "A sentential form with only terminal symbols",
+        "c": "The start symbol of a grammar",
+        "d": "A nonterminal symbol"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What characterizes a 'leftmost derivation'?",
+      "Answers": {
+        "a": "The rightmost nonterminal is expanded first",
+        "b": "The derivation results in the shortest possible sentence",
+        "c": "The leftmost nonterminal in each sentential form is the one that is expanded",
+        "d": "The derivation is unique"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What does a 'parse tree' represent?",
+      "Answers": {
+        "a": "The lexical structure of a program",
+        "b": "A hierarchical representation of a derivation",
+        "c": "The flow of control in a program",
+        "d": "The memory allocation of variables"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "When is a grammar considered 'ambiguous'?",
+      "Answers": {
+        "a": "When it has too many rules",
+        "b": "When it generates a sentence that has two or more distinct parse trees",
+        "c": "When it is difficult to understand",
+        "d": "When it cannot generate all sentences of the language"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "How is operator precedence typically handled in a grammar to avoid ambiguity?",
+      "Answers": {
+        "a": "By using parentheses in the grammar rules",
+        "b": "By assigning precedence levels outside the grammar",
+        "c": "By using the parse tree to indicate precedence levels",
+        "d": "Precedence is not relevant to grammar"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What does 'associativity' of operators refer to?",
+      "Answers": {
+        "a": "The order of operations in an expression",
+        "b": "The grouping of operands with operators",
+        "c": "The precedence of operators",
+        "d": "The type of operands"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In Extended BNF (EBNF), what do square brackets '[ ]' indicate?",
+      "Answers": {
+        "a": "Repetition",
+        "b": "Optional parts",
+        "c": "Alternative parts",
+        "d": "Terminal symbols"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In EBNF, what do braces '{ }' signify?",
+      "Answers": {
+        "a": "Optional parts",
+        "b": "Alternative parts",
+        "c": "Repetitions (zero or more)",
+        "d": "Grouping"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the purpose of Attribute Grammars?",
+      "Answers": {
+        "a": "To describe the dynamic semantics of a language",
+        "b": "To add semantic information to context-free grammars",
+        "c": "To define the lexical structure of a language",
+        "d": "To parse code more efficiently"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is NOT a primary use of Attribute Grammars?",
+      "Answers": {
+        "a": "Static semantics specification",
+        "b": "Compiler design (static semantics checking)",
+        "c": "Dynamic memory allocation",
+        "d": "Adding semantic info to parse trees"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "In Attribute Grammars, what are 'synthesized attributes'?",
+      "Answers": {
+        "a": "Attributes that are passed down the parse tree",
+        "b": "Attributes that are computed from the children of a node",
+        "c": "Attributes of terminal symbols",
+        "d": "Attributes that are used for error checking"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What are 'inherited attributes' in Attribute Grammars?",
+      "Answers": {
+        "a": "Attributes that are computed from the children of a node",
+        "b": "Attributes that are passed down the parse tree from parent to children",
+        "c": "Attributes of leaf nodes",
+        "d": "Attributes that define the syntax"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What are 'intrinsic attributes' in Attribute Grammars?",
+      "Answers": {
+        "a": "Attributes of nonterminal symbols",
+        "b": "Attributes computed by semantic rules",
+        "c": "Initial attributes on the leaves of a parse tree",
+        "d": "Attributes used for type checking"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "If all attributes in an Attribute Grammar are synthesized, how can the tree be decorated?",
+      "Answers": {
+        "a": "Only in top-down order",
+        "b": "Only in bottom-up order",
+        "c": "In any order",
+        "d": "Using a combination of top-down and bottom-up"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is 'semantics' in programming languages?",
+      "Answers": {
+        "a": "The syntax of the language",
+        "b": "The way code is formatted",
+        "c": "The meaning of the program",
+        "d": "The speed of execution"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which method describes the meaning of a program by executing its statements on a machine?",
+      "Answers": {
+        "a": "Axiomatic semantics",
+        "b": "Denotational semantics",
+        "c": "Operational semantics",
+        "d": "Attribute grammars"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Why is a 'virtual machine' often used in operational semantics for high-level languages?",
+      "Answers": {
+        "a": "To increase execution speed",
+        "b": "To make the semantics machine-dependent",
+        "c": "To avoid the expense of a hardware interpreter and the machine-dependent problems of a software interpreter",
+        "d": "To simplify the syntax analysis"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is a disadvantage of using a software pure interpreter for operational semantics?",
+      "Answers": {
+        "a": "It is too expensive",
+        "b": "It makes actions easy to understand",
+        "c": "It results in machine-independent definitions",
+        "d": "The detailed characteristics of the computer would make actions difficult to understand and the definition would be machine-dependent"
+      },
+      "Correct Answer": "d"
+    },
+    {
+      "Question": "What is the purpose of 'axiomatic semantics'?",
+      "Answers": {
+        "a": "To define the execution order of statements",
+        "b": "To formally verify program correctness",
+        "c": "To describe the syntax of a program",
+        "d": "To optimize code"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is an 'assertion' in axiomatic semantics?",
+      "Answers": {
+        "a": "A statement that is always true",
+        "b": "An expression that states the relationships and constraints among variables",
+        "c": "A type declaration",
+        "d": "A loop invariant"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In axiomatic semantics, what is a 'precondition'?",
+      "Answers": {
+        "a": "An assertion that follows a statement",
+        "b": "An assertion that precedes a statement",
+        "c": "The result of a computation",
+        "d": "A loop condition"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is a 'postcondition' in axiomatic semantics?",
+      "Answers": {
+        "a": "An assertion that precedes a statement",
+        "b": "An assertion that follows a statement",
+        "c": "The initial state of variables",
+        "d": "A function's return value"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is a 'weakest precondition'?",
+      "Answers": {
+        "a": "The most restrictive precondition",
+        "b": "The least restrictive precondition that guarantees the postcondition",
+        "c": "A precondition that is always true",
+        "d": "A precondition that is implied by the postcondition"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is the form of a pre- and post-condition in axiomatic semantics?",
+      "Answers": {
+        "a": "statement {P} {Q}",
+        "b": "{P} statement {Q}",
+        "c": "{P, Q} statement",
+        "d": "statement {P, Q}"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In the program proof process using axiomatic semantics, where does the process begin?",
+      "Answers": {
+        "a": "At the middle of the program",
+        "b": "At the end of the program",
+        "c": "At the first statement of the program",
+        "d": "At the postcondition for the entire program, working backwards"
+      },
+      "Correct Answer": "d"
+    },
+    {
+      "Question": "What is 'denotational semantics'?",
+      "Answers": {
+        "a": "A way to describe syntax",
+        "b": "A method for executing programs",
+        "c": "A technique for verifying program correctness",
+        "d": "A method for mapping syntactic entities to mathematical objects"
+      },
+      "Correct Answer": "d"
+    },
+    {
+      "Question": "What are 'mathematical objects' in denotational semantics?",
+      "Answers": {
+        "a": "Variables and data types",
+        "b": "Functions and sets",
+        "c": "Operators and expressions",
+        "d": "Statements and control structures"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is the 'state' of a program in denotational semantics?",
+      "Answers": {
+        "a": "The syntax of the program",
+        "b": "The set of all variables and their values",
+        "c": "The execution speed",
+        "d": "The memory usage"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What does the 'meaning function' do in denotational semantics?",
+      "Answers": {
+        "a": "It translates code into machine language",
+        "b": "It maps syntactic constructs to semantic values",
+        "c": "It executes the program",
+        "d": "It checks for syntax errors"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which of the following is a potential use of denotational semantics?",
+      "Answers": {
+        "a": "To write code faster",
+        "b": "To design programming languages",
+        "c": "To execute code",
+        "d": "To parse code"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is a limitation of denotational semantics?",
+      "Answers": {
+        "a": "It cannot be used for compiler generation",
+        "b": "It is too simple",
+        "c": "It is of little use to language users due to its complexity",
+        "d": "It cannot handle recursion"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which of the following statements about BNF and context-free grammars is correct?",
+      "Answers": {
+        "a": "BNF is more powerful than context-free grammars",
+        "b": "Context-free grammars are more readable than BNF",
+        "c": "BNF and context-free grammars are equivalent meta-languages",
+        "d": "BNF is used to describe semantics, while context-free grammars describe syntax"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the role of an attribute grammar in describing a programming language?",
+      "Answers": {
+        "a": "To replace context-free grammars entirely",
+        "b": "To add dynamic semantic rules",
+        "c": "To provide a complete specification of both syntax and semantics",
+        "d": "To add static semantic analysis to context-free grammars"
+      },
+      "Correct Answer": "d"
+    },
+    {
+      "Question": "Which semantic description method is best suited for proving program correctness?",
+      "Answers": {
+        "a": "Operational semantics",
+        "b": "Denotational semantics",
+        "c": "Axiomatic semantics",
+        "d": "Attribute grammars"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which semantic description method is based on state changes of a virtual machine?",
+      "Answers": {
+        "a": "Denotational semantics",
+        "b": "Axiomatic semantics",
+        "c": "Operational semantics",
+        "d": "Attribute grammars"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which semantic description method uses mathematical functions to model the meaning of programs?",
+      "Answers": {
+        "a": "Axiomatic semantics",
+        "b": "Operational semantics",
+        "c": "Denotational semantics",
+        "d": "Attribute grammars"
+      },
+      "Correct Answer": "c"
+    }
+  ]
+}

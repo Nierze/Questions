@@ -1,0 +1,485 @@
+{
+  "Questionnaire name": "Functional Programming Languages EASY",
+  "Questions": [
+    {
+      "Question": "What is the primary basis for the design of imperative programming languages?",
+      "Answers": {
+        "a": "Mathematical functions",
+        "b": "The von Neumann architecture",
+        "c": "Lambda calculus",
+        "d": "Data structures"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is the main concern in the design of imperative languages according to the text?",
+      "Answers": {
+        "a": "Suitability for software development",
+        "b": "Efficiency",
+        "c": "Theoretical basis",
+        "d": "Closeness to the user"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is the design of functional languages based on?",
+      "Answers": {
+        "a": "The von Neumann architecture",
+        "b": "Efficiency",
+        "c": "Mathematical functions",
+        "d": "Hardware limitations"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which of the following is a characteristic of functional languages mentioned in the introduction?",
+      "Answers": {
+        "a": "Strong dependence on machine architecture",
+        "b": "Primary focus on efficiency",
+        "c": "A solid theoretical basis",
+        "d": "Complex syntax"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What does a mathematical function map?",
+      "Answers": {
+        "a": "Variables to values",
+        "b": "Instructions to memory locations",
+        "c": "Members of a domain set to a range set",
+        "d": "Syntax to semantics"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What does a lambda expression specify?",
+      "Answers": {
+        "a": "Data types of variables",
+        "b": "Control flow of a program",
+        "c": "Parameter(s) and the mapping of a function",
+        "d": "Memory allocation for a function"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the general form of a lambda expression as mentioned in the text?",
+      "Answers": {
+        "a": "function(parameters) -> result",
+        "b": "define (parameters) result",
+        "c": "λ(parameters).expression",
+        "d": "(parameters) => expression"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "In mathematical functions, what is referential transparency?",
+      "Answers": {
+        "a": "The ability of a function to modify global variables",
+        "b": "The property that the evaluation of a function always produces the same result for the same arguments",
+        "c": "The transparency of the function's implementation details",
+        "d": "The ability to refer to functions as data"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What are the fundamental concepts of functional programming languages mentioned in the text?",
+      "Answers": {
+        "a": "Variables, loops, and assignments",
+        "b": "Function application, conditional expressions, recursion, and functional forms",
+        "c": "Objects, classes, and inheritance",
+        "d": "Pointers, memory management, and system calls"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In functional programming, how is repetition typically achieved?",
+      "Answers": {
+        "a": "Using loop structures like 'for' and 'while'",
+        "b": "Through the use of variables and assignments",
+        "c": "Using recursion",
+        "d": "By modifying the state of objects"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What are higher-order functions?",
+      "Answers": {
+        "a": "Functions that have a large number of parameters",
+        "b": "Functions that operate on data of higher dimensions",
+        "c": "Functions that can take functions as parameters and/or return functions as results",
+        "d": "Functions that are more efficient than first-order functions"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is function composition?",
+      "Answers": {
+        "a": "Combining multiple functions into a single module",
+        "b": "Applying one function to the result of another function",
+        "c": "Defining functions within other functions",
+        "d": "Creating a sequence of function calls"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is the first functional programming language mentioned in the text?",
+      "Answers": {
+        "a": "Scheme",
+        "b": "Haskell",
+        "c": "LISP",
+        "d": "ML"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "In what year was LISP designed?",
+      "Answers": {
+        "a": "1960",
+        "b": "1975",
+        "c": "1985",
+        "d": "2000"
+      },
+      "Correct Answer": "a"
+    },
+    {
+      "Question": "What was LISP originally intended for?",
+      "Answers": {
+        "a": "Numerical computation",
+        "b": "Artificial intelligence research",
+        "c": "System programming",
+        "d": "Web development"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What are the two data structures that dominated the early versions of LISP?",
+      "Answers": {
+        "a": "Arrays and records",
+        "b": "Lists and trees",
+        "c": "Numbers and characters",
+        "d": "Sets and graphs"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is the fundamental data structure in LISP?",
+      "Answers": {
+        "a": "Array",
+        "b": "Record",
+        "c": "List",
+        "d": "Tuple"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the syntax of LISP based on?",
+      "Answers": {
+        "a": "Keywords and operators",
+        "b": "Prefix notation",
+        "c": "Infix notation",
+        "d": "Postfix notation"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is the evaluation process in LISP based on?",
+      "Answers": {
+        "a": "Compilation",
+        "b": "Interpretation",
+        "c": "Translation",
+        "d": "Execution"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is Scheme?",
+      "Answers": {
+        "a": "An early imperative programming language",
+        "b": "A large, complex functional language",
+        "c": "A relatively simple dialect of LISP",
+        "d": "A purely functional language with lazy evaluation"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What type of scoping does Scheme exclusively use?",
+      "Answers": {
+        "a": "Dynamic scoping",
+        "b": "Static scoping",
+        "c": "Lexical scoping",
+        "d": "Global scoping"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "COMMON LISP is described as:",
+      "Answers": {
+        "a": "A purely functional language",
+        "b": "A small dialect of LISP",
+        "c": "A large LISP-based language",
+        "d": "A language with only dynamic scoping"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What features does ML include according to the text?",
+      "Answers": {
+        "a": "Dynamic scoping and weak typing",
+        "b": "Static scoping, strong typing, type inference, and exception handling",
+        "c": "Lazy evaluation and infinite lists",
+        "d": "Object-oriented features and garbage collection"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What kind of functional language is Haskell?",
+      "Answers": {
+        "a": "Eager functional language",
+        "b": "Impure functional language",
+        "c": "Lazy functional language",
+        "d": "Dynamically typed functional language"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What features does Haskell support as mentioned in the text?",
+      "Answers": {
+        "a": "Mutable data structures and side effects",
+        "b": "Infinite lists and set comprehension",
+        "c": "Dynamic typing and exception handling",
+        "d": "Object-oriented programming and concurrency"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which of the following is mentioned as an application of functional languages?",
+      "Answers": {
+        "a": "Database management systems",
+        "b": "Operating system kernels",
+        "c": "Symbolic computation",
+        "d": "Web browsers"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is symbolic computation?",
+      "Answers": {
+        "a": "Numerical calculations with high precision",
+        "b": "Manipulation of mathematical expressions",
+        "c": "Processing of textual data",
+        "d": "Graphical rendering"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Functional languages are well-suited for which of the following applications mentioned?",
+      "Answers": {
+        "a": "Game development",
+        "b": "Real-time systems",
+        "c": "Logic programming",
+        "d": "Low-level system programming"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "In the context of AI, what are functional languages often used for?",
+      "Answers": {
+        "a": "Memory management",
+        "b": "Knowledge representation",
+        "c": "Hardware interfacing",
+        "d": "Network communication"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which of the following is an application area where Scheme is used?",
+      "Answers": {
+        "a": "High-performance computing",
+        "b": "Operating system design",
+        "c": "Teaching introductory programming",
+        "d": "Embedded systems"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "According to the text, what is a characteristic of imperative languages?",
+      "Answers": {
+        "a": "Simple semantics",
+        "b": "Inefficient execution",
+        "c": "Complex syntax",
+        "d": "Automatic concurrency"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "According to the text, what is a characteristic of functional languages?",
+      "Answers": {
+        "a": "Efficient execution",
+        "b": "Complex semantics",
+        "c": "Simple syntax",
+        "d": "Programmer-designed concurrency"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "How is concurrency typically handled in imperative languages according to the text?",
+      "Answers": {
+        "a": "Automatically by the compiler",
+        "b": "Designed by the programmer",
+        "c": "Implicitly through function calls",
+        "d": "Managed by the language runtime"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What does the text say about concurrency in functional languages?",
+      "Answers": {
+        "a": "It is not supported",
+        "b": "It is less efficient than in imperative languages",
+        "c": "Programs can automatically be made concurrent",
+        "d": "It requires explicit programmer intervention"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What do functional programming languages primarily use to control program execution?",
+      "Answers": {
+        "a": "Variables and assignments",
+        "b": "Loops and conditional statements",
+        "c": "Function application, conditional expressions, recursion, and functional forms",
+        "d": "Objects and methods"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which language began as a purely functional language but later included imperative features?",
+      "Answers": {
+        "a": "Scheme",
+        "b": "Haskell",
+        "c": "LISP",
+        "d": "ML"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What type of scoping does Scheme exclusively use?",
+      "Answers": {
+        "a": "Dynamic",
+        "b": "Global",
+        "c": "Static",
+        "d": "Lexical"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which of the following is described as a large LISP-based language?",
+      "Answers": {
+        "a": "Scheme",
+        "b": "ML",
+        "c": "Haskell",
+        "d": "COMMON LISP"
+      },
+      "Correct Answer": "d"
+    },
+    {
+      "Question": "ML is described as a functional language with which of the following properties?",
+      "Answers": {
+        "a": "Dynamic scoping and weak typing",
+        "b": "Static scoping and strong typing",
+        "c": "Lazy evaluation and dynamic typing",
+        "d": "Global scoping and weak typing"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is a key characteristic of Haskell according to the summary?",
+      "Answers": {
+        "a": "Eager evaluation",
+        "b": "Mutable data structures",
+        "c": "Lazy evaluation",
+        "d": "Dynamic typing"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is a potential disadvantage of purely functional languages compared to imperative alternatives mentioned in the summary?",
+      "Answers": {
+        "a": "More complex semantics",
+        "b": "Lower efficiency on existing machine architectures",
+        "c": "More difficult to parallelize",
+        "d": "Lack of support for recursion"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which programming paradigm is based directly on the von Neumann architecture?",
+      "Answers": {
+        "a": "Functional programming",
+        "b": "Object-oriented programming",
+        "c": "Imperative programming",
+        "d": "Logic programming"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is a key feature of mathematical functions that is often leveraged in functional programming?",
+      "Answers": {
+        "a": "Side effects",
+        "b": "Mutable state",
+        "c": "Referential transparency",
+        "d": "Implicit loops"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the role of recursion in functional programming?",
+      "Answers": {
+        "a": "To manage memory allocation",
+        "b": "To implement iterative processes",
+        "c": "To handle input and output operations",
+        "d": "To define data structures"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which of the following allows functions to be treated as data in functional programming?",
+      "Answers": {
+        "a": "Control flow statements",
+        "b": "Higher-order functions",
+        "c": "Data structures",
+        "d": "Variable assignments"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is the result of applying one function to the output of another function called?",
+      "Answers": {
+        "a": "Function overloading",
+        "b": "Function overriding",
+        "c": "Function composition",
+        "d": "Function currying"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What was the primary application domain for which LISP was initially developed?",
+      "Answers": {
+        "a": "Business applications",
+        "b": "Scientific computing",
+        "c": "Artificial intelligence",
+        "d": "Web development"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What syntactic feature is characteristic of LISP?",
+      "Answers": {
+        "a": "Infix operators",
+        "b": "Block structures",
+        "c": "Prefix notation",
+        "d": "Postfix notation"
+      },
+      "Correct Answer": "c"
+    }
+  ]
+}

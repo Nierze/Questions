@@ -1,0 +1,515 @@
+{
+"Questionnaire name": "History of Programming Languages",
+"Questions": [
+{
+"Question": "Which of the following programming languages was the first to be designed but never implemented?",
+"Answers": {
+"a": "Fortran I",
+"b": "Plankalkül",
+"c": "ALGOL 60",
+"d": "COBOL"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What was a major disadvantage of using machine code for programming?",
+"Answers": {
+"a": "High readability",
+"b": "Easy modification",
+"c": "Tedious expression coding",
+"d": "Availability of indexing"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "Which of the following is NOT a characteristic of Short Code?",
+"Answers": {
+"a": "Expressions were coded left to right",
+"b": "Included operations for absolute value",
+"c": "Used for BINAC computers",
+"d": "Provided auto-increment registers"
+},
+"Correct Answer": "d"
+},
+{
+"Question": "What was a limitation of Speedcoding?",
+"Answers": {
+"a": "Lack of conditional branching",
+"b": "Slow execution speed",
+"c": "Absence of pseudo ops",
+"d": "No support for array access"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "Who led the team that developed the UNIVAC Compiling System?",
+"Answers": {
+"a": "John Backus",
+"b": "Grace Hopper",
+"c": "John McCarthy",
+"d": "Dennis Ritchie"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "For what type of computer was Fortran I designed?",
+"Answers": {
+"a": "BINAC",
+"b": "UNIVAC",
+"c": "IBM 704",
+"d": "IBM 1401"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "Which of the following was NOT a design goal for Fortran I?",
+"Answers": {
+"a": "Good array handling",
+"b": "Efficient counting loops",
+"c": "String handling",
+"d": "Machine efficiency"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What was a characteristic of Fortran I?",
+"Answers": {
+"a": "Names could have up to 8 characters",
+"b": "Post-test counting loop (DO)",
+"c": "Included data typing statements",
+"d": "Separate compilation"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "When was the Fortran I compiler released?",
+"Answers": {
+"a": "1954",
+"b": "1957",
+"c": "1958",
+"d": "1962"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What was a significant feature introduced in Fortran II?",
+"Answers": {
+"a": "Logical selection statement",
+"b": "Character string handling",
+"c": "Independent compilation",
+"d": "Dynamic arrays"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "Which version of Fortran introduced explicit type declarations?",
+"Answers": {
+"a": "Fortran I",
+"b": "Fortran II",
+"c": "Fortran IV",
+"d": "Fortran 77"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "Which version of Fortran introduced the IF-THEN-ELSE statement?",
+"Answers": {
+"a": "Fortran II",
+"b": "Fortran IV",
+"c": "Fortran 77",
+"d": "Fortran 90"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "Which of the following was a major change in Fortran 90?",
+"Answers": {
+"a": "Character string handling",
+"b": "Logical loop control statement",
+"c": "Modules",
+"d": "Arithmetic IF statement"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What is a key characteristic of Fortran compilers (before Fortran 90)?",
+"Answers": {
+"a": "Dynamic typing",
+"b": "Late binding",
+"c": "Highly optimizing",
+"d": "Dynamic storage allocation"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What does LISP stand for?",
+"Answers": {
+"a": "List Processing",
+"b": "Logical Instruction Set Programming",
+"c": "Language for Scientific Programming",
+"d": "Linear System Processing"
+},
+"Correct Answer": "a"
+},
+{
+"Question": "For what type of computing was LISP designed?",
+"Answers": {
+"a": "Numerical computation",
+"b": "Business applications",
+"c": "Symbolic computation",
+"d": "System programming"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What are the two data types in LISP?",
+"Answers": {
+"a": "Integers and floats",
+"b": "Arrays and records",
+"c": "Atoms and lists",
+"d": "Characters and strings"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What programming paradigm did LISP pioneer?",
+"Answers": {
+"a": "Object-oriented programming",
+"b": "Functional programming",
+"c": "Imperative programming",
+"d": "Logic programming"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "Which of the following is a contemporary dialect of LISP?",
+"Answers": {
+"a": "Pascal",
+"b": "Scheme",
+"c": "C++",
+"d": "Java"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "Which of the following is a characteristic of Scheme?",
+"Answers": {
+"a": "Large and complex",
+"b": "Static scoping",
+"c": "Limited use of functions",
+"d": "Complex syntax"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What was the primary goal of ALGOL 60's design?",
+"Answers": {
+"a": "To be easy to use",
+"b": "To be close to machine code",
+"c": "To be a universal language",
+"d": "To support business applications"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "Which of the following features was introduced in ALGOL 58?",
+"Answers": {
+"a": "Block structure",
+"b": "Subprogram recursion",
+"c": "Compound statements",
+"d": "I/O capabilities"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What symbol was used as the assignment operator in ALGOL 58?",
+"Answers": {
+"a": "=",
+"b": ":=",
+"c": "->",
+"d": "<-"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "Which of the following was NOT included in ALGOL 60?",
+"Answers": {
+"a": "Block structure",
+"b": "Two parameter passing methods",
+"c": "String handling",
+"d": "Subprogram recursion"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What is considered one of ALGOL 60's successes?",
+"Answers": {
+"a": "Wide use in the U.S.",
+"b": "Strong support from IBM",
+"c": "Formal syntax definition (BNF)",
+"d": "Portability due to I/O"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What was a reason for ALGOL 60's limited use?",
+"Answers": {
+"a": "Lack of formal syntax definition",
+"b": "Too simple to implement",
+"c": "Entrenchment of COBOL",
+"d": "Lack of I/O"
+},
+"Correct Answer": "d"
+},
+{
+"Question": "Which language was COBOL based on?",
+"Answers": {
+"a": "ALGOL 60",
+"b": "Fortran",
+"c": "FLOW-MATIC",
+"d": "PL/I"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What was a design goal for COBOL?",
+"Answers": {
+"a": "To be very powerful",
+"b": "To look like simple English",
+"c": "To be biased by current compiler problems",
+"d": "To be similar to mathematical notation"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "Which of the following is a contribution of COBOL?",
+"Answers": {
+"a": "Arithmetic expressions",
+"b": "Hierarchical data structures (records)",
+"c": "Subscripts",
+"d": "Short names"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What influence did the DoD have on COBOL?",
+"Answers": {
+"a": "Opposed its development",
+"b": "Had no influence",
+"c": "Required its use",
+"d": "Designed the language"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "Who designed BASIC?",
+"Answers": {
+"a": "Kemeny & Kurtz",
+"b": "McCarthy",
+"c": "Hopper",
+"d": "Backus"
+},
+"Correct Answer": "a"
+},
+{
+"Question": "What was a design goal of BASIC?",
+"Answers": {
+"a": "To be as efficient as possible",
+"b": "To be easy to learn and use",
+"c": "To prioritize computer time over user time",
+"d": "To be complex and powerful"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What is a current popular dialect of BASIC?",
+"Answers": {
+"a": "QuickBASIC",
+"b": "Visual BASIC",
+"c": "Turbo BASIC",
+"d": "BASIC.NET"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "Which organizations were involved in the design of PL/I?",
+"Answers": {
+"a": "ACM and GAMM",
+"b": "IBM and SHARE",
+"c": "ANSI and DoD",
+"d": "Sun and Netscape"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What was an initial concept for PL/I?",
+"Answers": {
+"a": "Based on ALGOL 60",
+"b": "Extension of COBOL",
+"c": "Extension of Fortran IV",
+"d": "Based on LISP"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "Which of the following is a contribution of PL/I?",
+"Answers": {
+"a": "Simple and small",
+"b": "First exception handling",
+"c": "Limited data types",
+"d": "No concurrency"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What is a characteristic of dynamic languages like APL and SNOBOL?",
+"Answers": {
+"a": "Static typing",
+"b": "Static storage allocation",
+"c": "Variables are untyped",
+"d": "Complex syntax"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "Who designed APL?",
+"Answers": {
+"a": "Ken Iverson",
+"b": "John Backus",
+"c": "Larry Wall",
+"d": "Dennis Ritchie"
+},
+"Correct Answer": "a"
+},
+{
+"Question": "What is SNOBOL known for?",
+"Answers": {
+"a": "Numerical computation",
+"b": "String manipulation",
+"c": "System programming",
+"d": "AI research"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What language was SIMULA 67 based on?",
+"Answers": {
+"a": "Fortran",
+"b": "ALGOL 60",
+"c": "COBOL",
+"d": "PL/I"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What concept did SIMULA 67 introduce?",
+"Answers": {
+"a": "Functional programming",
+"b": "Logic programming",
+"c": "Data abstraction through classes",
+"d": "Scripting"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What is the concept of orthogonality in programming language design?",
+"Answers": {
+"a": "Many basic features",
+"b": "Few principle concepts, few combining mechanisms",
+"c": "Complex syntax",
+"d": "Limited data structures"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "Which of the following is a contribution of ALGOL 68?",
+"Answers": {
+"a": "Limited scope",
+"b": "Static arrays",
+"c": "Reference types",
+"d": "Simple data structures"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "Who developed Pascal?",
+"Answers": {
+"a": "Dennis Ritchie",
+"b": "Niklaus Wirth",
+"c": "Larry Wall",
+"d": "Alan Kay"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What was Pascal designed for?",
+"Answers": {
+"a": "Systems programming",
+"b": "Web development",
+"c": "Teaching structured programming",
+"d": "AI research"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "From which language did C evolve?",
+"Answers": {
+"a": "Pascal",
+"b": "ALGOL 68",
+"c": "Fortran",
+"d": "COBOL"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What is C known for?",
+"Answers": {
+"a": "Strong type checking",
+"b": "Powerful set of operators",
+"c": "Object-oriented features",
+"d": "Automatic memory management"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What type of language is Perl?",
+"Answers": {
+"a": "Compiled language",
+"b": "Scripting language",
+"c": "Functional language",
+"d": "Logic language"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What is a characteristic of Perl variables?",
+"Answers": {
+"a": "Dynamically typed",
+"b": "Implicitly declared",
+"c": "Statically typed and implicitly declared",
+"d": "Explicitly declared"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "On what is Prolog based?",
+"Answers": {
+"a": "Imperative programming",
+"b": "Object-oriented programming",
+"c": "Formal logic",
+"d": "Functional programming"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What is Ada named after?",
+"Answers": {
+"a": "A computer scientist",
+"b": "A programming concept",
+"c": "Augusta Ada Byron",
+"d": "A programming tool"
+},
+"Correct Answer": "c"
+}
+]
+}

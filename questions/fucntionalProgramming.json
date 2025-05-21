@@ -1,515 +1,505 @@
 {
-  "Questionnaire name": "Advanced Functional Programming Concepts",
+  "Questionnaire name": "Advanced Functional Programming Concepts Quiz",
   "Questions": [
     {
-      "Question": "Which of the following is NOT a characteristic of pure functional programming languages?",
+      "Question": "What is the fundamental architectural basis that primarily influenced the design of imperative languages, contrasting with functional languages?",
       "Answers": {
-        "a": "Referential transparency",
-        "b": "Mutable state",
-        "c": "First-class functions",
-        "d": "Recursion as primary control structure"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "In functional programming, what does 'referential transparency' mean?",
-      "Answers": {
-        "a": "All functions must have explicit return types",
-        "b": "Function calls can be replaced with their return values without changing program behavior",
-        "c": "All references must be properly documented",
-        "d": "Functions must reference global variables transparently"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "Which data structure is most commonly used in functional programming languages due to its immutability?",
-      "Answers": {
-        "a": "Arrays",
-        "b": "Hash tables",
-        "c": "Linked lists",
-        "d": "Binary trees"
+        "a": "Mathematical function theory",
+        "b": "Lambda calculus principles",
+        "c": "The von Neumann architecture",
+        "d": "Machine learning models"
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "What is the primary reason for avoiding side effects in functional programming?",
+      "Question": "A lambda expression, such as $\\lambda(x)x*x*x$, primarily serves to:",
       "Answers": {
-        "a": "To make code easier to debug",
-        "b": "To improve execution speed",
-        "c": "To make code easier to reason about and test",
-        "d": "To reduce memory usage"
+        "a": "Define a named function for global use.",
+        "b": "Specify the parameter(s) and the mapping of a nameless function.",
+        "c": "Execute a function with a predefined parameter.",
+        "d": "Optimize the memory usage of a function."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In the context of functional forms, if $h \\equiv f \\circ g$, and $f(x) \\equiv x+2$ and $g(x) \\equiv 3*x$, what is the resulting function $h(x)$?",
+      "Answers": {
+        "a": "$(x+2) * 3*x$",
+        "b": "$3*(x+2)$",
+        "c": "$(3*x)+2$",
+        "d": "$3*x + 2*x$"
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "In the context of lazy evaluation, what is a 'thunk'?",
+      "Question": "The functional form 'Apply-to-all' (e.g., $\\alpha(h, (2,3,4))$ where $h(X) \\equiv X*X$) fundamentally achieves what?",
       "Answers": {
-        "a": "A data structure that holds previously computed values",
-        "b": "A syntax error in functional code",
-        "c": "A placeholder for a computation that hasn't been performed yet",
-        "d": "A function that contains only pure operations"
+        "a": "Applies a list of functions to a single parameter.",
+        "b": "Yields a single value by aggregating results from a list.",
+        "c": "Applies a single function to each element of a list, yielding a list of values.",
+        "d": "Transforms a single function into a list of functions."
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "Which of the following languages is NOT primarily functional?",
+      "Question": "A core objective in designing a Functional Programming Language (FPL) is to mimic mathematical functions. How does the basic process of computation in an FPL fundamentally differ from an imperative language regarding variables?",
       "Answers": {
-        "a": "Haskell",
-        "b": "F#",
-        "c": "Ruby",
-        "d": "Clojure"
+        "a": "FPLs use mutable variables extensively for efficiency.",
+        "b": "In FPLs, operations modify variables in place to track state.",
+        "c": "In FPLs, variables are not strictly necessary, reducing complexity associated with their management.",
+        "d": "FPLs require explicit memory management for all variables."
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "What is currying in functional programming?",
+      "Question": "What does 'Referential Transparency' in an FPL imply about function evaluation?",
       "Answers": {
-        "a": "A technique to optimize recursive functions",
-        "b": "Converting a function that takes multiple arguments into a sequence of functions each taking a single argument",
-        "c": "Adding spices to make code more readable",
-        "d": "A way to implement loops without mutation"
+        "a": "A function can produce different results for the same parameters depending on the program's state.",
+        "b": "The evaluation of a function always produces the same result given the same parameters.",
+        "c": "Functions can refer to external variables that might change.",
+        "d": "The transparency of a function's code determines its output."
       },
       "Correct Answer": "b"
     },
     {
-      "Question": "Which concept in functional programming allows for working with computations that may or may not result in a value?",
+      "Question": "Originally, LISP data object types were primarily restricted to:",
       "Answers": {
-        "a": "Functors",
-        "b": "Lambda calculus",
-        "c": "Monads",
-        "d": "Pattern matching"
+        "a": "Numbers and strings",
+        "b": "Atoms and lists",
+        "c": "Characters and arrays",
+        "d": "Booleans and records"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "How are LISP lists typically stored internally?",
+      "Answers": {
+        "a": "As arrays of pointers",
+        "b": "As double-linked lists",
+        "c": "As single-linked lists",
+        "d": "As hash tables"
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "What distinguishes a higher-order function from other functions?",
+      "Question": "In LISP, if the list (A B C) is interpreted as a function application, what does this signify?",
       "Answers": {
-        "a": "It contains more lines of code",
-        "b": "It has greater time complexity",
-        "c": "It takes at least one function as input or returns a function as output",
-        "d": "It can only be defined at the module level"
+        "a": "The function A is applied to a single list parameter (B C).",
+        "b": "The functions A, B, and C are called sequentially.",
+        "c": "The function named A is applied to the two parameters, B and C.",
+        "d": "It's a data list and cannot be a function application."
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "Which statement about lambda calculus is correct?",
+      "Question": "One of the distinguishing characteristics of Scheme, setting it apart from contemporary LISP dialects at its inception, is its:",
       "Answers": {
-        "a": "It requires mutable state to be Turing complete",
-        "b": "It forms the theoretical foundation of functional programming",
-        "c": "It was developed in the 1970s for object-oriented programming",
-        "d": "It cannot express recursive functions"
+        "a": "Exclusive use of dynamic scoping.",
+        "b": "Exclusive use of static scoping.",
+        "c": "Lack of support for first-class functions.",
+        "d": "Complex, typeless nature."
       },
       "Correct Answer": "b"
     },
     {
-      "Question": "In Haskell, what is the type of the function 'map'?",
+      "Question": "In Scheme, what is the typical evaluation order of parameters passed to a function?",
       "Answers": {
-        "a": "(a -> b) -> [a] -> [b]",
-        "b": "[a] -> [a]",
-        "c": "(a -> a) -> a",
-        "d": "a -> [a]"
-      },
-      "Correct Answer": "a"
-    },
-    {
-      "Question": "Which of the following accurately describes tail recursion optimization?",
-      "Answers": {
-        "a": "Converting all recursive functions to loops",
-        "b": "A compiler technique that eliminates stack growth for recursive functions where the recursive call is the last operation",
-        "c": "Making the recursion depth fixed at compile time",
-        "d": "Using auxiliary data structures to improve recursive performance"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "Which property of functional programs makes them particularly suitable for parallel execution?",
-      "Answers": {
-        "a": "Dynamic typing",
-        "b": "Absence of mutable state and side effects",
-        "c": "Use of recursion instead of loops",
-        "d": "Garbage collection"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "What is the purpose of pattern matching in functional programming?",
-      "Answers": {
-        "a": "To improve code readability only",
-        "b": "To implement regular expressions",
-        "c": "To decompose data structures and handle different cases based on structure",
-        "d": "To match variable names with their types"
+        "a": "Strictly left-to-right.",
+        "b": "Strictly right-to-left.",
+        "c": "No particular order is guaranteed.",
+        "d": "Order is determined by parameter size."
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "What feature of ML and Haskell allows the compiler to guarantee type correctness without requiring explicit type declarations?",
+      "Question": "What is the primary purpose of the QUOTE special form in Scheme?",
       "Answers": {
-        "a": "Dynamic typing",
-        "b": "Type erasure",
-        "c": "Type inference",
-        "d": "Duck typing"
+        "a": "To ensure a parameter is evaluated before function application.",
+        "b": "To define a new function.",
+        "c": "To avoid parameter evaluation when it is not appropriate.",
+        "d": "To convert a symbol to a string."
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "In the context of monads, what does the 'bind' operation (>>=) do?",
+      "Question": "Consider the Scheme DEFINE special form: `(DEFINE sym expr)`. How does its evaluation process for `sym` differ from typical function parameters?",
       "Answers": {
-        "a": "Combines two monads into one",
-        "b": "Creates a monad from a pure value",
-        "c": "Applies a function that returns a monad to a monad, handling the nested structure",
-        "d": "Extracts a pure value from a monad"
+        "a": "`sym` is evaluated first, then `expr`.",
+        "b": "`sym` is never evaluated; `expr` is evaluated and bound to `sym`.",
+        "c": "Both `sym` and `expr` are evaluated before binding.",
+        "d": "`expr` is bound to `sym` only if `sym` is an atom."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In Scheme's `COND` special form, if multiple predicates evaluate to true, which expression's value is returned?",
+      "Answers": {
+        "a": "The value of the last expression in the last pair whose predicate is true.",
+        "b": "The value of the first expression in the first pair whose predicate is true.",
+        "c": "The value of the last expression in the first pair whose predicate evaluates to true.",
+        "d": "An error is signaled due to ambiguity."
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "What is the concept of 'persistent data structures' in functional programming?",
+      "Question": "What is the result of the Scheme expression `(CONS 'A '(B C))`?",
       "Answers": {
-        "a": "Data structures stored permanently on disk",
-        "b": "Data structures that preserve previous versions when modified",
-        "c": "Data structures that cannot be garbage collected",
-        "d": "Data structures with constant access time"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "Which of these is a valid example of a functor in functional programming?",
-      "Answers": {
-        "a": "A monad without bind operation",
-        "b": "An iterator in an imperative language",
-        "c": "A data structure that implements a map function",
-        "d": "Any function that takes two arguments"
+        "a": "'(A B C)",
+        "b": "((A) B C)",
+        "c": "(A B C)",
+        "d": "(A . (B C))"
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "What is the primary purpose of the Either monad?",
+      "Question": "If `lis` is `'((A B) C D)`, what does `(CAR lis)` yield in Scheme?",
       "Answers": {
-        "a": "To represent computations with two possible return types (usually success/error)",
-        "b": "To choose between two different functions to execute",
-        "c": "To combine two monads into a single operation",
-        "d": "To ensure either lazy or strict evaluation"
-      },
-      "Correct Answer": "a"
-    },
-    {
-      "Question": "In functional programming, what is function composition?",
-      "Answers": {
-        "a": "Writing multiple functions in the same file",
-        "b": "Combining simple functions to build more complex ones",
-        "c": "Splitting a complex function into simpler ones",
-        "d": "Using lambda expressions inside named functions"
+        "a": "A",
+        "b": "(A B)",
+        "c": "C",
+        "d": "((A B))"
       },
       "Correct Answer": "b"
     },
     {
-      "Question": "What differentiates lazy evaluation from strict evaluation?",
+      "Question": "If `lis` is `'((A B) C D)`, what does `(CDR lis)` yield in Scheme?",
       "Answers": {
-        "a": "Lazy evaluation always uses less memory",
-        "b": "Strict evaluation always executes faster",
-        "c": "Lazy evaluation defers computation until the result is needed",
-        "d": "Strict evaluation works only with pure functions"
+        "a": "(B C D)",
+        "b": "(B)",
+        "c": "(C D)",
+        "d": "D"
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "Which language feature allows Haskell to handle infinite data structures?",
+      "Question": "The Scheme predicate `EQ?` is noted to return an unreliable result under what specific condition?",
       "Answers": {
-        "a": "Garbage collection",
-        "b": "Lazy evaluation",
-        "c": "Static typing",
-        "d": "Monadic I/O"
+        "a": "When comparing two different numeric atoms with the same value.",
+        "b": "When its parameters are lists.",
+        "c": "When comparing an atom to an empty list.",
+        "d": "When used within a `LAMBDA` expression."
       },
       "Correct Answer": "b"
     },
     {
-      "Question": "What are algebraic data types primarily used for in functional programming?",
+      "Question": "What does the Scheme function `(NULL? '())` evaluate to?",
       "Answers": {
-        "a": "Mathematical calculations",
-        "b": "Creating composite data structures from simpler ones",
-        "c": "Implementing object-oriented inheritance",
-        "d": "Optimizing memory usage"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "In functional programming, what is a pure function?",
-      "Answers": {
-        "a": "A function written in a purely functional language",
-        "b": "A function that always returns boolean values",
-        "c": "A function that, given the same input, always produces the same output and has no side effects",
-        "d": "A function with no parameters"
+        "a": "#F",
+        "b": "()",
+        "c": "#T",
+        "d": "Error"
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "Which statement about functional and imperative programming is true?",
+      "Question": "In the provided Scheme `member` function example, what is the base case for the recursion when the atom is NOT found?",
       "Answers": {
-        "a": "Functional programs are always shorter than equivalent imperative programs",
-        "b": "Imperative programming focuses on 'what to do' while functional focuses on 'how to do it'",
-        "c": "Imperative programming involves changing state while functional programming avoids it",
-        "d": "Functional programming cannot express certain algorithms that imperative programming can"
+        "a": "`((EQ? atm (CAR lis)) #T)`",
+        "b": "`((NULL? lis) #F)`",
+        "c": "`((ELSE (member atm (CDR lis))))`",
+        "d": "When `lis` becomes an atom."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "The Scheme function `equalsimp` is designed for simple lists. How does the more general `equal` function handle elements within lists during comparison?",
+      "Answers": {
+        "a": "It only checks if the CARs are atoms using EQ?.",
+        "b": "It flattens all sublists before comparison.",
+        "c": "It recursively calls `equal` for the CARs and CDRs of the lists.",
+        "d": "It converts all elements to strings for comparison."
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "What is the relationship between Church encoding and functional programming?",
+      "Question": "What is the purpose of the `LET` special form in Scheme as demonstrated by the `quadratic_roots` example?",
       "Answers": {
-        "a": "Church encoding is used to implement OOP features in functional languages",
-        "b": "Church encoding demonstrates how data and control structures can be represented using only functions",
-        "c": "Church encoding is a technique for optimizing functional code",
-        "d": "Church encoding is a way to represent XML in functional languages"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "Which concept is critical for implementing effectful operations (like I/O) in purely functional languages like Haskell?",
-      "Answers": {
-        "a": "Dynamic typing",
-        "b": "Monads",
-        "c": "Imperative blocks",
-        "d": "Exception handling"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "What is point-free style in functional programming?",
-      "Answers": {
-        "a": "Writing functions that don't use decimal points",
-        "b": "Writing functions without explicitly mentioning the data arguments they operate on",
-        "c": "A coding style that avoids using function composition",
-        "d": "Programming without specific endpoints or goals"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "In the context of functional programming, what does 'lifting' a function typically mean?",
-      "Answers": {
-        "a": "Moving it to a higher scope level",
-        "b": "Converting it from imperative to functional style",
-        "c": "Adapting a function to work with wrapped values (like in functors or monads)",
-        "d": "Increasing its performance"
+        "a": "To define global variables accessible throughout the program.",
+        "b": "To create a block for sequential execution without local bindings.",
+        "c": "To evaluate expressions and bind their values to names locally within its body.",
+        "d": "To conditionally execute a body of code based on expressions."
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "What is the primary difference between foldl and foldr in functional languages?",
+      "Question": "According to the PDF, why is it significant for a Scheme language system to convert tail recursive functions to use iteration?",
       "Answers": {
-        "a": "foldl works on lists while foldr works on trees",
-        "b": "foldl is tail-recursive while foldr is not necessarily so",
-        "c": "foldr can work on infinite lists in lazy languages while foldl cannot",
-        "d": "Both B and C are correct"
-      },
-      "Correct Answer": "d"
-    },
-    {
-      "Question": "What is the difference between an applicative functor and a regular functor?",
-      "Answers": {
-        "a": "Applicative functors can only be used in mobile applications",
-        "b": "Applicative functors can apply functions wrapped in the same context to wrapped values",
-        "c": "Regular functors support more operations than applicative functors",
-        "d": "Applicative functors are specific to Haskell, while regular functors are found in all functional languages"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "Which feature of functional languages makes function calls more predictable in concurrent environments?",
-      "Answers": {
-        "a": "Dynamic dispatch",
-        "b": "Reference counting",
-        "c": "Immutability and lack of side effects",
-        "d": "Automatic memory management"
+        "a": "It allows recursion with side effects.",
+        "b": "It makes the functions compatible with imperative loops.",
+        "c": "It makes the execution faster.",
+        "d": "It enables dynamic scoping for those functions."
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "What is partial application in functional programming?",
+      "Question": "How is the `mapcar` function in Scheme, an example of 'Apply to All', implemented recursively according to the example?",
       "Answers": {
-        "a": "Applying a function to only some of its arguments, resulting in a function that takes the remaining arguments",
-        "b": "Applying a function only to part of a data structure",
-        "c": "Applying a function only some of the time based on runtime conditions",
-        "d": "Implementing only part of a function's logic, leaving the rest as stubs"
-      },
-      "Correct Answer": "a"
-    },
-    {
-      "Question": "In functional programming, what is a closure?",
-      "Answers": {
-        "a": "A way to close or terminate a function execution",
-        "b": "A function bundled with references to its surrounding state",
-        "c": "A data structure that cannot be modified after creation",
-        "d": "A compiler optimization technique"
+        "a": "It applies `(CAR lis)` to `fun` and appends it to `(mapcar fun (CDR lis))`.",
+        "b": "It `CONS`es the result of `(fun (CAR lis))` onto the recursive call of `mapcar` with `(CDR lis)`.",
+        "c": "It iterates through the list, applying the function and building a new list in reverse.",
+        "d": "It uses an accumulator to gather results from applying `fun` to each element."
       },
       "Correct Answer": "b"
     },
     {
-      "Question": "Which data structure would be most efficient for frequent prepending operations in a functional language?",
+      "Question": "What capability in Scheme allows for functions that build Scheme code and request its interpretation, as shown in the `adder` example?",
       "Answers": {
-        "a": "Array",
-        "b": "Doubly-linked list",
-        "c": "Singly-linked list",
-        "d": "Binary search tree"
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "What does the term 'catamorphism' refer to in functional programming?",
-      "Answers": {
-        "a": "A type of exception handling",
-        "b": "A generalized fold operation that breaks down data structures",
-        "c": "A method of constructing complex data types",
-        "d": "A technique for function memoization"
+        "a": "The use of static scoping.",
+        "b": "The availability of the interpreter function `EVAL` to the user.",
+        "c": "The typeless nature of the language.",
+        "d": "The `DEFINE` special form's ability to redefine existing functions."
       },
       "Correct Answer": "b"
     },
     {
-      "Question": "Which of these best describes the trade-off when using immutable data structures?",
+      "Question": "How does COMMON LISP primarily differ from Scheme in terms of language complexity and features?",
       "Answers": {
-        "a": "Higher memory usage but safer concurrent access",
-        "b": "Slower execution but more readable code",
-        "c": "Faster execution but more complex algorithms",
-        "d": "Lower memory usage but more complex garbage collection"
-      },
-      "Correct Answer": "a"
-    },
-    {
-      "Question": "What is the main advantage of using continuation-passing style?",
-      "Answers": {
-        "a": "It makes the code easier to read",
-        "b": "It gives complete control over the flow of execution",
-        "c": "It reduces memory usage",
-        "d": "It eliminates the need for functions"
+        "a": "COMMON LISP is much simpler and smaller than Scheme.",
+        "b": "COMMON LISP is a large and complex language, incorporating features like records and arrays, unlike Scheme's minimality.",
+        "c": "COMMON LISP lacks iterative control statements, adhering to pure functional principles more than Scheme.",
+        "d": "Scheme has more extensive I/O capabilities and package management than COMMON LISP."
       },
       "Correct Answer": "b"
     },
     {
-      "Question": "How does functional programming typically handle state changes?",
+      "Question": "ML's syntax is described as being closer to which language family compared to LISP?",
       "Answers": {
-        "a": "By using hidden mutable variables",
-        "b": "By passing and returning modified versions of data",
-        "c": "By avoiding stateful programs entirely",
-        "d": "By using singleton objects"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "What is a key characteristic of the Actor model often used with functional programming?",
-      "Answers": {
-        "a": "Actors share memory and communicate through it",
-        "b": "Actors can directly modify each other's state",
-        "c": "Actors are isolated and communicate only through message passing",
-        "d": "Actors must be implemented as pure functions"
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Which language pioneered the concept of pattern matching that's now common in many functional languages?",
-      "Answers": {
-        "a": "Lisp",
-        "b": "ML",
-        "c": "JavaScript",
-        "d": "Smalltalk"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "What is the relationship between functional programming and the lambda calculus?",
-      "Answers": {
-        "a": "They're entirely unrelated concepts from different fields",
-        "b": "Lambda calculus is a mathematical formalism that underlies functional programming",
-        "c": "Lambda calculus is a specific language feature in functional programming languages",
-        "d": "Functional programming was developed to replace lambda calculus"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "Which programming paradigm is LISP primarily associated with?",
-      "Answers": {
-        "a": "Object-oriented programming",
-        "b": "Functional programming",
-        "c": "Imperative programming",
-        "d": "Logic programming"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "What makes a language 'purely' functional as opposed to just supporting functional programming?",
-      "Answers": {
-        "a": "It has more built-in functions",
-        "b": "Its syntax is more concise",
-        "c": "It doesn't allow side effects or mutable state",
-        "d": "It's implemented in another functional language"
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "In functional programming, what are 'lenses' used for?",
-      "Answers": {
-        "a": "Debugging and inspecting function internals",
-        "b": "Composable getters and setters for immutable data structures",
-        "c": "Focusing execution on specific parts of a program",
-        "d": "Magnifying code for better readability"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "Which of these languages has the strongest emphasis on immutability?",
-      "Answers": {
-        "a": "Python",
-        "b": "JavaScript",
-        "c": "Haskell",
+        "a": "Prolog",
+        "b": "Fortran",
+        "c": "Pascal",
         "d": "C++"
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "What is memoization in functional programming?",
+      "Question": "A key feature of ML's type system, distinguishing it from Scheme, is that ML:",
       "Answers": {
-        "a": "A process of documenting function behavior",
-        "b": "A technique to cache function results for given inputs to avoid redundant calculations",
-        "c": "A method for converting functions to loops",
-        "d": "A way to implement memory management"
+        "a": "Is dynamically typed.",
+        "b": "Is strongly typed and performs type inferencing.",
+        "c": "Is typeless, similar to early LISP.",
+        "d": "Allows extensive type coercions."
       },
       "Correct Answer": "b"
     },
     {
-      "Question": "How does functional programming typically handle errors compared to imperative programming?",
+      "Question": "If you define `fun cube (x) = x * x * x;` in ML without specifying `x : int`, what type would ML likely infer for `x` and the function's return type by default for numeric values?",
       "Answers": {
-        "a": "By using exceptions and try-catch blocks",
-        "b": "By returning error codes as integers",
-        "c": "By using types like Either, Option/Maybe to represent success or failure",
-        "d": "By crashing the program"
+        "a": "real",
+        "b": "string",
+        "c": "int",
+        "d": "bool"
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "What is the primary reason many functional languages use immutable data structures?",
+      "Question": "How does ML handle function overloading for user-defined functions, for instance, if you wanted a `cube` function for both `int` and `real` parameters?",
       "Answers": {
-        "a": "To save memory",
-        "b": "To make the language easier to implement",
-        "c": "To avoid bugs related to unexpected state changes",
-        "d": "To force programmers to use recursion"
+        "a": "It allows overloading if the parameter types are different.",
+        "b": "It requires explicit type casting within the function body.",
+        "c": "User-defined overloaded functions are not allowed; they would need different names.",
+        "d": "It uses a special keyword `overload` to define such functions."
       },
       "Correct Answer": "c"
     },
     {
-      "Question": "Which of these languages was NOT influenced by functional programming concepts?",
+      "Question": "In ML, pattern matching as shown in `fun fact(0) = 1 | fact(n : int) : int = n * fact(n – 1)` primarily allows a function to:",
       "Answers": {
-        "a": "JavaScript",
-        "b": "Python",
-        "c": "COBOL",
-        "d": "C#"
+        "a": "Operate on different parameter forms or values.",
+        "b": "Perform type checking at runtime.",
+        "c": "Automatically generate iterative versions of recursive functions.",
+        "d": "Match regular expressions in string parameters."
       },
-      "Correct Answer": "c"
+      "Correct Answer": "a"
     },
     {
-      "Question": "What is the Y combinator used for in functional programming?",
+      "Question": "What is the ML equivalent of Scheme's `CONS` for list construction, and what are its `CAR` and `CDR` equivalents?",
       "Answers": {
-        "a": "Memory optimization",
-        "b": "Implementing recursion in a language without explicit recursion support",
-        "c": "Parallel processing",
-        "d": "Type checking"
+        "a": "CONS is `++`, CAR is `head`, CDR is `tail`.",
+        "b": "CONS is `::`, CAR is `hd`, CDR is `tl`.",
+        "c": "CONS is `list`, CAR is `first`, CDR is `rest`.",
+        "d": "CONS is `cons`, CAR is `car`, CDR is `cdr` (like Scheme)."
       },
       "Correct Answer": "b"
+    },
+    {
+      "Question": "The `val` statement in ML (e.g., `val distance = time * speed;`) is described as being similar to Scheme's `DEFINE`. What is a crucial characteristic of `val`?",
+      "Answers": {
+        "a": "It is an assignment statement that can modify `distance` later.",
+        "b": "It binds a name to a value and is not like an imperative assignment.",
+        "c": "It can only bind names to function definitions.",
+        "d": "It requires explicit type declaration for the name being bound."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is stated as the most significant difference between Haskell and ML, despite their similarities?",
+      "Answers": {
+        "a": "Haskell uses dynamic typing, while ML is statically typed.",
+        "b": "Haskell is purely functional, lacking variables and assignment statements.",
+        "c": "ML supports lazy evaluation, whereas Haskell is strict.",
+        "d": "Haskell's syntax is based on LISP, unlike ML."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In Haskell, the function definition `fact n = n * fact (n – 1)` along with `fact 0 = 1` demonstrates what feature common in functional languages, also seen in ML?",
+      "Answers": {
+        "a": "Type inferencing",
+        "b": "Lazy evaluation",
+        "c": "Pattern matching",
+        "d": "Side effects"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "How can Haskell's list generation `[2, 4..10]` be interpreted?",
+      "Answers": {
+        "a": "A list containing elements 2 and the result of 4 subtracted by 10.",
+        "b": "An arithmetic series starting at 2, with a step derived from 2 to 4, up to 10.",
+        "c": "A list of lists: `[[2,4],[10]]`.",
+        "d": "A list containing only the numbers 2, 4, and 10."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What does the Haskell expression `[n * n | n <- [1..20]]` represent?",
+      "Answers": {
+        "a": "A function that squares numbers from 1 to 20.",
+        "b": "A list of the squares of the first 20 positive integers.",
+        "c": "A conditional statement checking if n*n is in the list [1..20].",
+        "d": "The sum of squares from 1 to 20."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "The `factors n = [i | i <- [1..n \`div\` 2], n \`mod\` i == 0]` Haskell function uses list comprehension to find factors. Why does it iterate up to `n \`div\` 2`?",
+      "Answers": {
+        "a": "To exclude the number `n` itself from its list of factors.",
+        "b": "Because any factor larger than `n \`div\` 2` would imply a co-factor smaller than 2 (i.e., 1), which is already covered.",
+        "c": "To ensure the list of factors is always even in length.",
+        "d": "This is an arbitrary limit to improve performance, potentially missing some factors."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "The Haskell Quicksort implementation `sort (a:x) = sort [b | b <- x, b <= a] ++ [a] ++ sort [b | b <- x, b > a]` partitions the list `x` based on pivot `a`. What is the role of `[a]` in the concatenation?",
+      "Answers": {
+        "a": "It adds `a` to both sub-lists before further sorting.",
+        "b": "It places the pivot `a` between the sorted list of smaller elements and the sorted list of larger elements.",
+        "c": "It filters out `a` from the list if it's a duplicate.",
+        "d": "It serves as a termination condition for the recursion."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is a primary characteristic of a 'strict' language regarding parameter evaluation?",
+      "Answers": {
+        "a": "It allows parameters to be evaluated only when they are needed.",
+        "b": "It requires all actual parameters to be fully evaluated before function execution.",
+        "c": "It evaluates parameters in a non-deterministic order.",
+        "d": "It strictly enforces type checking for all parameters."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Lazy evaluation, a feature of nonstrict languages like Haskell, offers what main advantage mentioned in the context of 'infinite lists'?",
+      "Answers": {
+        "a": "It forces all computations to complete, even for infinite data structures.",
+        "b": "It makes programs easier to debug due to predictable evaluation order.",
+        "c": "It allows computation with potentially infinite data structures by only computing necessary values.",
+        "d": "It ensures that all side effects are processed immediately."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Consider the Haskell definition `squares = [n*n | n <- [0..]]`. If `member squares 16` is called (where `member` checks for list membership), how does lazy evaluation prevent infinite computation if 16 is indeed a square?",
+      "Answers": {
+        "a": "It pre-computes all squares up to a certain large limit.",
+        "b": "It evaluates `squares` completely before `member` starts.",
+        "c": "`squares` generates numbers only as `member` requests them; it stops once 16 is found (or passed if using a smarter member).",
+        "d": "It converts the infinite list to a finite one based on the input to `member`."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "The improved Haskell `member2 (m:x) n` function with guards (`m < n`, `m == n`, `otherwise`) is specifically designed to solve what problem with a simpler `member` function when checking membership in an infinite, ordered list like `squares`?",
+      "Answers": {
+        "a": "It handles non-numeric types in the list.",
+        "b": "It works faster for finite lists.",
+        "c": "It avoids infinite computation if `n` is not in the list and the list is ordered.",
+        "d": "It allows duplicate elements in the list."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which functional language is specifically mentioned as being used for 'throw-away programs'?",
+      "Answers": {
+        "a": "LISP",
+        "b": "Scheme",
+        "c": "Haskell",
+        "d": "APL"
+      },
+      "Correct Answer": "d"
+    },
+    {
+      "Question": "LISP is noted for its applications in Artificial Intelligence. Which of the following is NOT listed as a specific AI application area for LISP?",
+      "Answers": {
+        "a": "Knowledge representation",
+        "b": "Robotic control systems",
+        "c": "Machine learning",
+        "d": "Natural language processing"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "One of the key differences highlighted when comparing functional and imperative languages is their typical efficiency on current hardware. What is the general observation?",
+      "Answers": {
+        "a": "Functional languages are generally more efficient due to simpler syntax.",
+        "b": "Imperative languages tend to have less efficient execution due to complex semantics.",
+        "c": "Functional languages often have less efficient execution on existing machine architectures.",
+        "d": "Both are equally efficient, with differences only in specific implementations."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "How does concurrency typically differ in its management between imperative and functional languages, according to the comparison?",
+      "Answers": {
+        "a": "Concurrency is inherently impossible in functional languages.",
+        "b": "In functional languages, concurrency must be explicitly designed by the programmer, similar to imperative languages.",
+        "c": "Programs in functional languages can often be automatically made concurrent, while in imperative languages, it's programmer-designed.",
+        "d": "Imperative languages offer more straightforward automatic concurrency."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which LISP dialect is characterized as being 'a relatively simple dialect ... that uses static scoping exclusively'?",
+      "Answers": {
+        "a": "COMMON LISP",
+        "b": "APL",
+        "c": "Scheme",
+        "d": "ML"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which functional language is described as 'static-scoped and strongly typed... includes type inference, exception handling, and a variety of data structures and abstract data types'?",
+      "Answers": {
+        "a": "Haskell",
+        "b": "ML",
+        "c": "Scheme",
+        "d": "COMMON LISP"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "A primary reason cited for the limited widespread use of purely functional languages, despite their advantages, is their:",
+      "Answers": {
+        "a": "Complex syntax and semantics.",
+        "b": "Difficulty in modeling mathematical concepts.",
+        "c": "Lower efficiency on existing machine architectures.",
+        "d": "Lack of support for recursion."
+      },
+      "Correct Answer": "c"
     }
   ]
 }

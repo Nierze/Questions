@@ -1,257 +1,255 @@
 {
-  "Questionnaire name": "Introduction to Programming Languages - Advanced Quiz",
-
-  "Questions": [
-    {
-      "Question": "What is the main reason ALGOL 60, despite being superior to FORTRAN in structure, did not become more popular?",
-      "Answers": {
-        "a": "It was too costly to implement.",
-        "b": "It lacked recursion capabilities.",
-        "c": "It was not widely promoted or adopted.",
-        "d": "It had poor execution performance."
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Which of the following is NOT a component of the Language Evaluation Criteria?",
-      "Answers": {
-        "a": "Readability",
-        "b": "Reliability",
-        "c": "Extensibility",
-        "d": "Cost"
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "How does too much orthogonality in a language negatively impact it?",
-      "Answers": {
-        "a": "It increases the learning curve drastically.",
-        "b": "It introduces a lot of syntactic sugar.",
-        "c": "It leads to complex and unreadable code constructs.",
-        "d": "It forces all variables to be strongly typed."
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Why is abstraction considered critical for writability?",
-      "Answers": {
-        "a": "It enforces strict typing across all constructs.",
-        "b": "It limits the use of complex operators.",
-        "c": "It allows ignoring implementation details when using structures or operations.",
-        "d": "It forces a language to follow a rigid structure."
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Which language category is primarily rule-based with no specific execution order?",
-      "Answers": {
-        "a": "Imperative",
-        "b": "Functional",
-        "c": "Logic",
-        "d": "Scripting"
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Which language was highlighted for being most orthogonal?",
-      "Answers": {
-        "a": "Java",
-        "b": "C",
-        "c": "ALGOL68",
-        "d": "FORTRAN"
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Which of the following contributes LEAST to the readability of a language?",
-      "Answers": {
-        "a": "Control statements",
-        "b": "Syntax considerations",
-        "c": "Assembly-like syntax",
-        "d": "Data types and structures"
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Which of the following best describes aliasing in the context of programming languages?",
-      "Answers": {
-        "a": "A method of hiding implementation details.",
-        "b": "Using symbols to create readable code.",
-        "c": "Two or more ways of referencing the same memory location.",
-        "d": "Using short names for functions."
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Which language was developed primarily for text processing tasks?",
-      "Answers": {
-        "a": "MATLAB",
-        "b": "Java",
-        "c": "Perl",
-        "d": "C"
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Why is run-time type checking generally less desirable than compile-time checking?",
-      "Answers": {
-        "a": "It makes the code more readable.",
-        "b": "It makes compilation slower.",
-        "c": "It is more expensive in terms of execution time.",
-        "d": "It restricts the use of dynamic typing."
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Which language design principle emphasizes a small number of rules and primitives?",
-      "Answers": {
-        "a": "Expressivity",
-        "b": "Support for abstraction",
-        "c": "Simplicity and orthogonality",
-        "d": "Portability"
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "What is the costliest phase in terms of maintenance according to the lecture?",
-      "Answers": {
-        "a": "Development",
-        "b": "Compilation",
-        "c": "Execution",
-        "d": "Maintenance"
-      },
-      "Correct Answer": "d"
-    },
-    {
-      "Question": "Which category of programming languages includes C and Java?",
-      "Answers": {
-        "a": "Logic",
-        "b": "Imperative",
-        "c": "Functional",
-        "d": "Markup"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "Which of the following is an example of process abstraction?",
-      "Answers": {
-        "a": "Creating a complex data structure",
-        "b": "Using a subprogram or method",
-        "c": "Declaring global variables",
-        "d": "Accessing memory directly"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "What is a key reason for learning multiple programming languages?",
-      "Answers": {
-        "a": "It is a job requirement for all companies.",
-        "b": "It ensures compatibility across platforms.",
-        "c": "It increases ability to express ideas and design better software.",
-        "d": "It is mandatory in most programming courses."
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Which language design aspect is directly influenced by word concatenation characters?",
-      "Answers": {
-        "a": "Abstraction",
-        "b": "Expressivity",
-        "c": "Syntax considerations",
-        "d": "Control flow"
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "What is an example of operator overloading that is generally considered acceptable?",
-      "Answers": {
-        "a": "Using + to mean matrix multiplication",
-        "b": "Using + for string concatenation and numeric addition",
-        "c": "Using + for boolean operations",
-        "d": "Using + to merge dictionaries"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "Which language is best suited for matrix processing tasks according to the lesson?",
-      "Answers": {
-        "a": "Perl",
-        "b": "Java",
-        "c": "MATLAB",
-        "d": "Python"
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "What is the main goal of studying programming language concepts?",
-      "Answers": {
-        "a": "To memorize syntax rules",
-        "b": "To avoid using outdated languages",
-        "c": "To choose, understand, and design better languages",
-        "d": "To master assembly language programming"
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Which of the following is NOT an example of a special-purpose language?",
-      "Answers": {
-        "a": "HTML",
-        "b": "SPSS",
-        "c": "Python",
-        "d": "SPICE"
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Which language is often used in Artificial Intelligence due to its symbolic programming?",
-      "Answers": {
-        "a": "Java",
-        "b": "LISP",
-        "c": "Python",
-        "d": "FORTRAN"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "Which of the following is a cost factor that results from inefficient run-time type checking?",
-      "Answers": {
-        "a": "Higher training cost",
-        "b": "Slower program execution",
-        "c": "Poor readability",
-        "d": "Increased portability"
-      },
-      "Correct Answer": "b"
-    },
-    {
-      "Question": "What does the term 'expressivity' in a language relate to?",
-      "Answers": {
-        "a": "The ability to support logical reasoning",
-        "b": "The number of keywords in a language",
-        "c": "The ease of specifying operations in code",
-        "d": "The ability to abstract away hardware details"
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Why is compile-time error detection preferred over run-time detection?",
-      "Answers": {
-        "a": "It reduces code size.",
-        "b": "It lowers development effort.",
-        "c": "It identifies errors earlier, saving time and cost.",
-        "d": "It improves syntax highlighting."
-      },
-      "Correct Answer": "c"
-    },
-    {
-      "Question": "Which feature is critical for the portability of programming languages?",
-      "Answers": {
-        "a": "Memory management",
-        "b": "Syntax consistency",
-        "c": "Implementation independence",
-        "d": "Error handling"
-      },
-      "Correct Answer": "c"
-    }
-  ]
+"Questionnaire name": "Introduction to Programming Languages",
+"Questions": [
+{
+"Question": "According to the PDF, what is a programming language?",
+"Answers": {
+"a": "A set of instructions for humans",
+"b": "A vocabulary and set of grammatical rules for instructing a computer",
+"c": "A method of communication between people",
+"d": "A complex mathematical formula"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "Why is it important for a computer scientist to study programming languages?",
+"Answers": {
+"a": "To become a linguist",
+"b": "To memorize many languages",
+"c": "To understand the underlying concepts and design choices",
+"d": "To limit themselves to one language"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "Approximately how many programming languages are estimated to exist?",
+"Answers": {
+"a": "Less than 100",
+"b": "Exactly 500",
+"c": "Over 700",
+"d": "About 1000"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What is one reason given for studying concepts of programming languages?",
+"Answers": {
+"a": "To decrease the ability to express ideas",
+"b": "To limit software development",
+"c": "To increase the ability to express ideas",
+"d": "To make programming more difficult"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "How does the PDF describe the influence of natural languages on thought?",
+"Answers": {
+"a": "They have no influence",
+"b": "They broaden conceptualization regardless of constructs",
+"c": "The depth of thought is influenced by the language's expressive power",
+"d": "Simpler languages lead to deeper thinking"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What is a potential consequence of a programmer's limited knowledge of programming languages?",
+"Answers": {
+"a": "Increased software development speed",
+"b": "Limitations on the kinds of data structures and control structures used",
+"c": "Enhanced creativity in software design",
+"d": "Better understanding of implementation"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "According to the PDF, what can awareness of a wider variety of programming language features do?",
+"Answers": {
+"a": "Increase limitations in software development",
+"b": "Reduce limitations in software development",
+"c": "Make software development more complex",
+"d": "Have no effect on software development"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What analogy is used to explain the benefit of knowing programming language concepts?",
+"Answers": {
+"a": "Mathematics",
+"b": "Physics",
+"c": "Natural languages and their grammar",
+"d": "Computer hardware"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "Why might a programmer choose a new language for a project instead of sticking with an older one?",
+"Answers": {
+"a": "Older languages are always better",
+"b": "Newer languages are always harder to learn",
+"c": "Another language may be more appropriate for the project's nature",
+"d": "To avoid learning new concepts"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "According to the PDF, what is an advantage of studying the principles of programming languages?",
+"Answers": {
+"a": "It limits the ability to judge languages",
+"b": "It provides a way to judge languages effectively",
+"c": "It makes all languages seem the same",
+"d": "It discourages learning new languages"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What does the PDF say about programming languages and their evolution?",
+"Answers": {
+"a": "They are static and unchanging",
+"b": "Many languages are very old",
+"c": "They are constantly evolving, and many are new",
+"d": "No new languages are being developed"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What is one benefit of knowing programming language concepts?",
+"Answers": {
+"a": "It makes learning other languages harder",
+"b": "It has no effect on learning new languages",
+"c": "You will learn other languages much easier",
+"d": "It only helps with old languages"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What skill do the best programmers possess?",
+"Answers": {
+"a": "Ability to write code without understanding implementation",
+"b": "Understanding of how things work 'under the hood'",
+"c": "Reliance on compilers to do everything",
+"d": "Ignoring implementation issues"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "Why does the PDF suggest that understanding implementation details is important?",
+"Answers": {
+"a": "It allows you to write less efficient code",
+"b": "It helps you use a language less intelligently",
+"c": "It helps you to use a language more intelligently and write more efficient code",
+"d": "It has no impact on code efficiency"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What is a potential outcome of better-informed language choices?",
+"Answers": {
+"a": "Less popular languages become even less used",
+"b": "Better languages would be more popular",
+"c": "All languages would become equally popular",
+"d": "Older languages would always be chosen"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "According to the author, who is capable of developing a programming language?",
+"Answers": {
+"a": "Only academics in ivory towers",
+"b": "Only large corporations",
+"c": "Smart individuals",
+"d": "No one anymore"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What is a reason someone might design a special-purpose language?",
+"Answers": {
+"a": "To limit software capabilities",
+"b": "To enter commands for specific software",
+"c": "To make software development more difficult",
+"d": "There is no reason"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "What are the main criteria needed to evaluate programming languages?",
+"Answers": {
+"a": "Readability, Writability, Reliability, Cost",
+"b": "Speed, Size, Popularity, Complexity",
+"c": "Simplicity, Orthogonality, Abstraction, Expressivity",
+"d": "Syntax, Semantics, Pragmatics, Logic"
+},
+"Correct Answer": "a"
+},
+{
+"Question": "In the early days of computing, what was considered most important in programming languages?",
+"Answers": {
+"a": "Readability",
+"b": "Writability",
+"c": "Efficiency and machine readability",
+"d": "Low cost"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "Why has readability become more important in programming languages?",
+"Answers": {
+"a": "Coding is the largest part of the software life cycle",
+"b": "Maintenance is a small part of the software life cycle",
+"c": "Maintenance is a large part of the software life cycle",
+"d": "Readability has no impact on maintenance"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What does 'simplicity' refer to in the context of programming language readability?",
+"Answers": {
+"a": "A large number of basic components",
+"b": "Having more than one way to do the same operation",
+"c": "A manageable set of features and constructs",
+"d": "Extensive operator overloading"
+},
+"Correct Answer": "c"
+},
+{
+"Question": "What is 'orthogonality' in programming languages?",
+"Answers": {
+"a": "Having many exceptions to the rules",
+"b": "Combining a small set of primitives in a small number of ways",
+"c": "Having complex rules",
+"d": "Restricting how primitives can be combined"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "According to the PDF, what is a drawback of restricting identifier length?",
+"Answers": {
+"a": "It improves readability",
+"b": "It has no impact on readability",
+"c": "It is good for readability",
+"d": "It is bad for readability"
+},
+"Correct Answer": "d"
+},
+{
+"Question": "What is 'writability' in the context of programming languages?",
+"Answers": {
+"a": "Ease of reading programs",
+"b": "Ease of creating programs",
+"c": "How reliably a program runs",
+"d": "The cost of a programming language"
+},
+"Correct Answer": "b"
+},
+{
+"Question": "How does the PDF define 'abstraction' in programming languages?",
+"Answers": {
+"a": "Ignoring all details",
+"b": "The ability to define and use complex structures while ignoring the details",
+"c": "Making structures more complex",
+"d": "Focusing only on low-level details"
+},
+"Correct Answer": "b"
 }
-
+]
+}

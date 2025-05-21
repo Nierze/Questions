@@ -1,0 +1,505 @@
+{
+  "Questionnaire name": "Advanced Concurrency Concepts Quiz",
+  "Questions": [
+    {
+      "Question": "Which of the following concurrency levels are stated in the presentation as NOT being addressed due to a lack of specific language issues? [cite: 3]",
+      "Answers": {
+        "a": "High-level language statement level and Unit level",
+        "b": "Machine instruction level and Program level",
+        "c": "Unit level and Program level",
+        "d": "Statement level and Subprogram level"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What type of multiprocessor architecture, introduced in the mid-1960s, was primarily used for instruction-level concurrency? [cite: 4]",
+      "Answers": {
+        "a": "Single-Instruction Multiple-Data (SIMD) machines only",
+        "b": "Multiple-Instruction Multiple-Data (MIMD) machines only",
+        "c": "Multiple partial processors (used for instruction-level concurrency)",
+        "d": "Multiple complete processors (used for program-level concurrency)"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "How is 'Logical concurrency' defined in contrast to 'Physical concurrency'? [cite: 5]",
+      "Answers": {
+        "a": "Logical concurrency uses multiple physical processors, while physical concurrency uses time-sharing on one processor.",
+        "b": "Logical concurrency is the appearance of physical concurrency presented by time-sharing one processor.",
+        "c": "Logical concurrency involves coroutines with a single thread of control, while physical concurrency involves multiple threads.",
+        "d": "Logical concurrency is only achievable on SIMD machines, whereas physical is on MIMD."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Coroutines are categorized under which type of concurrency due to their single thread of control? [cite: 5]",
+      "Answers": {
+        "a": "Physical concurrency",
+        "b": "Logical concurrency",
+        "c": "Quasi-concurrency",
+        "d": "Instruction-level concurrency"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which of the following is NOT a way tasks typically differ from ordinary subprograms? [cite: 7]",
+      "Answers": {
+        "a": "A task may be implicitly started.",
+        "b": "When a program unit starts a task, it is always suspended until the task completes.",
+        "c": "When a task's execution is completed, control may not return to the caller.",
+        "d": "Tasks usually work together."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What defines a 'heavyweight task' as opposed to a 'lightweight task'? [cite: 8]",
+      "Answers": {
+        "a": "Heavyweight tasks run in the same address space, while lightweight tasks have their own.",
+        "b": "Heavyweight tasks execute in their own address space, while lightweight tasks run in the same address space.",
+        "c": "Heavyweight tasks are always disjoint, while lightweight tasks communicate frequently.",
+        "d": "Heavyweight tasks have higher priority than lightweight tasks by default."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "If a task does not communicate with or affect the execution of any other task in the program, it is termed: [cite: 8]",
+      "Answers": {
+        "a": "A lightweight task",
+        "b": "A synchronized task",
+        "c": "A disjoint task",
+        "d": "A blocked task"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which of these is explicitly listed as a means for task communication necessary for synchronization? [cite: 9]",
+      "Answers": {
+        "a": "Direct memory manipulation",
+        "b": "Processor interrupts",
+        "c": "Shared nonlocal variables, parameters, or message passing",
+        "d": "File system locks"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Cooperation synchronization is exemplified by the producer-consumer problem where Task A must wait for Task B to complete a specific activity. Competition synchronization arises when: [cite: 10]",
+      "Answers": {
+        "a": "Task A and Task B need to exchange data.",
+        "b": "Two or more tasks must use a resource that cannot be simultaneously used.",
+        "c": "Task A implicitly starts Task B.",
+        "d": "Tasks are running on different processors."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "The diagram on slide L4.11, illustrating the 'Need for Competition Synchronization,' shows a potential issue if Task A (Add 1) and Task B (Multiply by 2) access TOTAL concurrently. If TOTAL is initially 3, and Task B fetches TOTAL, then Task A fetches, adds, and stores, and finally Task B multiplies its fetched value and stores, what is the incorrect final value of TOTAL shown in the diagram as a possibility? [cite: 11]",
+      "Answers": {
+        "a": "3",
+        "b": "7",
+        "c": "6 (if B fetches 3, A makes it 4, B stores 3*2=6)",
+        "d": "8 (if A makes it 4, B fetches 4, B stores 4*2=8)"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the primary role of the 'scheduler' in the context of task execution? [cite: 12]",
+      "Answers": {
+        "a": "To assign initial priorities to tasks.",
+        "b": "To manage the memory allocation for each task.",
+        "c": "To map task execution onto available processors and control task execution.",
+        "d": "To perform deadlock detection and resolution."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "A task is in the 'Blocked' state when it: [cite: 13]",
+      "Answers": {
+        "a": "Has been created but not yet started.",
+        "b": "Is ready to run but no processor is available.",
+        "c": "Is currently using a processor.",
+        "d": "Has been running, but cannot now continue, usually waiting for an event."
+      },
+      "Correct Answer": "d"
+    },
+    {
+      "Question": "What is 'deadlock' in a concurrent environment? [cite: 14]",
+      "Answers": {
+        "a": "When a single task loses its liveness.",
+        "b": "When all tasks in the environment lose their liveness.",
+        "c": "When a task completes its execution but doesn't release resources.",
+        "d": "When the scheduler fails to allocate a processor to a ready task."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which of the following is NOT listed as a primary design issue for concurrency? [cite: 15]",
+      "Answers": {
+        "a": "Competition and cooperation synchronization.",
+        "b": "Controlling task scheduling.",
+        "c": "Choosing the programming language for tasks.",
+        "d": "How and when tasks are created, start, and end execution."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "The 'wait' operation on a semaphore (originally 'P' by Dijkstra) involves which action if the semaphore's counter is greater than 0? [cite: 18]",
+      "Answers": {
+        "a": "Increment the counter and put the caller in the queue.",
+        "b": "Put the caller in the queue and attempt to transfer control.",
+        "c": "Decrement the counter.",
+        "d": "Do nothing until the counter is 0."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "In the 'release' operation of a semaphore (originally 'V' by Dijkstra), if the semaphore's queue is NOT empty, what action is taken regarding the calling task? [cite: 19]",
+      "Answers": {
+        "a": "The calling task's execution is terminated.",
+        "b": "The calling task is added to the semaphore's queue.",
+        "c": "The calling task is put in the task ready queue, and control is transferred to a task from the semaphore's queue.",
+        "d": "The semaphore's counter is incremented."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "In the producer-consumer problem using semaphores for cooperation synchronization, what is the initial count of `emptyspots` typically set to? [cite: 23]",
+      "Answers": {
+        "a": "0",
+        "b": "1",
+        "c": "BUFLEN (buffer length)",
+        "d": "The number of producers"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "In the producer code for cooperation synchronization with semaphores, what is the immediate action after a `DEPOSIT(VALUE)` operation? [cite: 24]",
+      "Answers": {
+        "a": "`wait(emptyspots)`",
+        "b": "`release(fullspots)`",
+        "c": "`wait(fullspots)`",
+        "d": "`release(emptyspots)`"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "A binary semaphore, used for competition synchronization like the `access` semaphore in the producer-consumer example, restricts its counter to which values? [cite: 25]",
+      "Answers": {
+        "a": "0 and BUFLEN",
+        "b": "-1 and 1",
+        "c": "0 and 1",
+        "d": "Any non-negative integer"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What critical property must the semaphore `wait` and `release` operations possess for correct competition synchronization? [cite: 25]",
+      "Answers": {
+        "a": "They must be idempotent.",
+        "b": "They must be atomic.",
+        "c": "They must be non-blocking.",
+        "d": "They must be asynchronous."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "According to the evaluation of semaphores, what is a potential failure in *competition* synchronization if `release(access)` is omitted in the producer-consumer code? [cite: 32]",
+      "Answers": {
+        "a": "The buffer will overflow.",
+        "b": "The buffer will underflow.",
+        "c": "The program will deadlock.",
+        "d": "The `access` semaphore counter will become negative."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the core idea behind monitors for managing shared data and restricting access? [cite: 33]",
+      "Answers": {
+        "a": "To allow any task to directly modify shared data using semaphores.",
+        "b": "To encapsulate shared data and its operations within an abstract data type.",
+        "c": "To use message passing for all access to shared data.",
+        "d": "To rely on the scheduler to prevent simultaneous access."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "How do monitors primarily guarantee competition synchronization for their resident shared data? [cite: 34]",
+      "Answers": {
+        "a": "By requiring tasks to acquire explicit locks before calling monitor procedures.",
+        "b": "By allowing only one access (call to a monitor procedure) at a time, implicitly queuing other calls.",
+        "c": "By using binary semaphores internally for each shared variable.",
+        "d": "By making all shared data read-only within the monitor."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Regarding cooperation synchronization, how do monitors compare to semaphores according to the evaluation? [cite: 36]",
+      "Answers": {
+        "a": "Monitors automatically handle all cooperation, unlike semaphores.",
+        "b": "Cooperation support in monitors is very similar to semaphores and has the same problems.",
+        "c": "Monitors provide no support for cooperation synchronization.",
+        "d": "Cooperation in monitors is inherently safer and less error-prone than with semaphores."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "The central idea of message passing for task communication is likened to 'seeing a doctor'. What does this analogy emphasize? [cite: 37]",
+      "Answers": {
+        "a": "Messages are always prioritized based on urgency.",
+        "b": "Tasks communicate asynchronously without waiting for each other.",
+        "c": "Tasks (sender/receiver) wait for each other and get together for message transmission (rendezvous).",
+        "d": "A central message broker is always required."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the term for the actual message transmission when a sender task's message is accepted by a receiver task in a message passing system? [cite: 38]",
+      "Answers": {
+        "a": "Synchronization point",
+        "b": "Broadcast",
+        "c": "Rendezvous",
+        "d": "Acknowledgement"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "In Java, what is the name of the method whose code can be in concurrent execution with other such methods, forming the concurrent unit? [cite: 39]",
+      "Answers": {
+        "a": " `execute()` ",
+        "b": " `start()` ",
+        "c": " `run()` ",
+        "d": " `thread()` "
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which Thread class method in Java is a request from the running thread to voluntarily surrender the processor? [cite: 41]",
+      "Answers": {
+        "a": " `sleep()` ",
+        "b": " `join()` ",
+        "c": " `stop()` ",
+        "d": " `yield()` "
+      },
+      "Correct Answer": "d"
+    },
+    {
+      "Question": "What is the purpose of the `join()` method in Java's Thread class? [cite: 41]",
+      "Answers": {
+        "a": "To merge two threads into one.",
+        "b": "To force a method to delay its execution until another thread's `run` method completes.",
+        "c": "To allow a thread to join a thread group.",
+        "d": "To connect a thread to a specific processor core."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "If the `main` method in Java creates a new thread, what is that new thread's default priority? [cite: 42]",
+      "Answers": {
+        "a": " `MAX_PRIORITY` ",
+        "b": " `MIN_PRIORITY` ",
+        "c": " `NORM_PRIORITY` ",
+        "d": "A randomly assigned priority"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "How does the `synchronized` modifier on a Java method provide competition synchronization? [cite: 43]",
+      "Answers": {
+        "a": "It allows only threads with higher priority to execute the method.",
+        "b": "It creates a copy of the object for each thread.",
+        "c": "It disallows any other method from running on the object while it (the synchronized method) is in execution.",
+        "d": "It notifies waiting threads when the method completes."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "For cooperation synchronization in Java, the `wait()` method must be called in what manner to be effective? [cite: 44]",
+      "Answers": {
+        "a": "Outside a synchronized block",
+        "b": "Only once per object",
+        "c": "In a loop",
+        "d": "With a timeout parameter"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the function of the `notifyAll()` method in Java's cooperation synchronization mechanism? [cite: 44]",
+      "Answers": {
+        "a": "It notifies all threads in the system about an event.",
+        "b": "It awakens all threads on the specific object's wait list.",
+        "c": "It awakens one random thread from the object's wait list.",
+        "d": "It sends a notification to the operating system scheduler."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "How does thread creation in C# differ fundamentally from Java, as highlighted in the evaluation? [cite: 46, 49]",
+      "Answers": {
+        "a": "C# threads are always heavyweight tasks.",
+        "b": "In C#, any method can run in its own thread, not just a specific `run` method.",
+        "c": "C# threads start execution immediately upon object creation.",
+        "d": "C# does not use a `Thread` object to manage threads."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Which C# Thread method is used to make the calling thread wait for another thread to complete its execution? [cite: 47]",
+      "Answers": {
+        "a": " `Sleep()` ",
+        "b": " `Suspend()` ",
+        "c": " `Join()` ",
+        "d": " `Wait()` "
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which C# mechanism is specifically used for synchronizing threads when the only operations needed are incrementing or decrementing an integer? [cite: 48]",
+      "Answers": {
+        "a": "The `lock` statement",
+        "b": "The `Monitor` class",
+        "c": "The `Interlocked` class",
+        "d": "Volatile fields"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "The `lock (expression) {...}` statement in C# is primarily used to: [cite: 48]",
+      "Answers": {
+        "a": "Permanently lock an object from further modifications.",
+        "b": "Mark a critical section of code in a thread for synchronized access.",
+        "c": "Lock a variable to a specific value.",
+        "d": "Pause the execution of all other threads."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is stated as the primary objective of statement-level concurrency mechanisms? [cite: 50]",
+      "Answers": {
+        "a": "To allow programmers to define new synchronization primitives.",
+        "b": "To enable the compiler to automatically parallelize any sequential code.",
+        "c": "To provide a mechanism for programmers to inform the compiler how to map the program onto a multiprocessor architecture.",
+        "d": "To manage thread priorities at the statement level."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is a key consideration to minimize when mapping a program onto a multiprocessor architecture using statement-level concurrency? [cite: 50]",
+      "Answers": {
+        "a": "The number of threads created.",
+        "b": "The use of high-level language constructs.",
+        "c": "Communication among processors and their access to other processors' memories.",
+        "d": "The complexity of individual statements."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "If the `wait(aSemaphore)` operation is called and the semaphore's queue is empty, but its counter is 0, what happens to the caller? [cite: 18]",
+      "Answers": {
+        "a": "The counter is decremented to -1.",
+        "b": "The caller proceeds without waiting.",
+        "c": "The caller is put in the semaphore's queue.",
+        "d": "An error is signaled."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "In the context of Java threads, creating a `Thread` object using `new MyThread()` and then calling `myTh.start()` implies that the actual concurrent code is located where? [cite: 39, 40]",
+      "Answers": {
+        "a": "In the constructor of `MyThread`.",
+        "b": "In the `start()` method of the `Thread` class itself.",
+        "c": "In a `run()` method defined in the `MyThread` class (which extends `Thread` or implements `Runnable`).",
+        "d": "In a static block within the `MyThread` class."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Monitors are described as an Abstract Data Type (ADT) for shared data. This implies that: [cite: 33]",
+      "Answers": {
+        "a": "The internal structure of the shared data is exposed to client units.",
+        "b": "Only the operations defined by the monitor can be used to access the shared data.",
+        "c": "Monitors can only manage primitive data types.",
+        "d": "Client units are responsible for ensuring synchronized access to the monitor's data."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "The evaluation of C# concurrency mechanisms suggests they are an 'advance over Java threads'. Which is NOT explicitly mentioned as an area of advancement? [cite: 49]",
+      "Answers": {
+        "a": "Any method can run its own thread.",
+        "b": "Thread termination is cleaner.",
+        "c": "Synchronization is more sophisticated.",
+        "d": "C# threads have significantly lower memory overhead."
+      },
+      "Correct Answer": "d"
+    },
+    {
+      "Question": "When using semaphores for cooperation synchronization in the producer-consumer problem, if the consumer calls `wait(fullspots)` and `fullspots.count` is 0, what happens to the consumer task? [cite: 22, 26]",
+      "Answers": {
+        "a": "It proceeds to fetch a value, risking underflow.",
+        "b": "It decrements `fullspots.count` to -1.",
+        "c": "It is placed in the queue of the `fullspots` semaphore.",
+        "d": "It immediately increments `emptyspots.count`."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "The `Interlocked` class in C# is a highly specialized synchronization mechanism. Using it for operations more complex than incrementing/decrementing an integer would typically be: [cite: 48]",
+      "Answers": {
+        "a": "Recommended for optimal performance.",
+        "b": "The standard way to ensure complex atomic operations.",
+        "c": "Not its intended purpose; other mechanisms like `lock` or `Monitor` would be more appropriate.",
+        "d": "Automatically converted by the compiler into equivalent `lock` statements."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "The `yield()` method in Java Threads is a request. What does this imply about its execution? [cite: 41]",
+      "Answers": {
+        "a": "The system guarantees the thread will stop immediately and another will run.",
+        "b": "The thread is guaranteed to be suspended for a specific duration.",
+        "c": "It's a hint to the scheduler, which may or may not immediately switch to another thread.",
+        "d": "It permanently lowers the thread's priority."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "If a Java method is marked `synchronized`, and two threads attempt to call this method on the *same object instance* simultaneously, what happens? [cite: 43]",
+      "Answers": {
+        "a": "Both threads execute the method concurrently.",
+        "b": "One thread will execute the method, while the other will be blocked until the first one finishes.",
+        "c": "An exception is thrown due to concurrent access.",
+        "d": "The object is cloned, and each thread executes the method on a separate clone."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In the semaphore-based producer-consumer solution with competition synchronization, why are there separate `wait(access)` and `release(access)` calls around `DEPOSIT` and `Workspace` operations, in addition to waits/releases on `emptyspots` and `fullspots`? [cite: 28, 29, 30]",
+      "Answers": {
+        "a": "To ensure `emptyspots` and `fullspots` are updated atomically.",
+        "b": "To provide mutually exclusive access to the shared buffer itself during the DEPOSIT/FETCH operation.",
+        "c": "To count the number of accesses to the buffer.",
+        "d": "This is redundant and has no specific purpose."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is a potential consequence if the `wait` method in Java is NOT called inside a loop when used for cooperation synchronization? [cite: 44]",
+      "Answers": {
+        "a": "The thread might wake up spuriously (without `notify`/`notifyAll` for its condition) and proceed when the condition it was waiting for is still false.",
+        "b": "The `notify` call will fail to wake the thread.",
+        "c": "The program will deadlock immediately.",
+        "d": "The `synchronized` block will not provide mutual exclusion."
+      },
+      "Correct Answer": "a"
+    },
+    {
+      "Question": "The 'MIMD (Multiple-Instruction Multiple-Data) machines' are described as having: [cite: 4]",
+      "Answers": {
+        "a": "One processor executing multiple data streams.",
+        "b": "Multiple processors executing the same instruction on different data.",
+        "c": "Independent processors that can be synchronized, suitable for unit-level concurrency.",
+        "d": "Partial processors focused only on input/output operations."
+      },
+      "Correct Answer": "c"
+    }
+  ]
+}

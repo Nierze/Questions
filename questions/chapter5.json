@@ -1,0 +1,255 @@
+{
+  "Questionnaire name": "Names, Bindings, Typing, and Scopes: Advanced Concepts",
+  "Questions": [
+    {
+      "Question": "Which of the following is a primary disadvantage of case-sensitive names in programming languages, as highlighted in the text?",
+      "Answers": {
+        "a": "Increased compiler complexity.",
+        "b": "Reduced writability due to stricter rules.",
+        "c": "Impaired readability because names that look alike are different. [cite: 13]",
+        "d": "Inability to use mixed-case predefined names."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the fundamental difference between a 'keyword' and a 'reserved word' according to the chapter?",
+      "Answers": {
+        "a": "Keywords are only special in certain contexts, while reserved words can never be user-defined names. [cite: 15]",
+        "b": "Reserved words are only special in certain contexts, while keywords can never be user-defined names.",
+        "c": "Keywords are used to delimit statement clauses, while reserved words are for variable names.",
+        "d": "Keywords are a subset of reserved words that are case-sensitive."
+      },
+      "Correct Answer": "a"
+    },
+    {
+      "Question": "The text states that 'not all variables have them [names]'[cite: 19]. In which common scenario might a variable lack a direct name?",
+      "Answers": {
+        "a": "Statically declared global variables.",
+        "b": "Variables allocated on the stack within a function.",
+        "c": "Heap-dynamic variables referenced exclusively through pointers. [cite: 37, 38]",
+        "d": "Named constants."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Under what circumstances can aliases be created, potentially harming program readability as mentioned in the text? [cite: 19]",
+      "Answers": {
+        "a": "Only through explicit heap-dynamic allocation.",
+        "b": "Exclusively when using static variables in C.",
+        "c": "Via pointers, reference variables, and C/C++ unions. [cite: 19]",
+        "d": "When implicit declarations are used in Perl."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Binding the `float` type to a specific IEEE 754 representation typically occurs at what binding time? [cite: 24]",
+      "Answers": {
+        "a": "Language design time",
+        "b": "Language implementation time [cite: 24]",
+        "c": "Compile time",
+        "d": "Load time"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What distinguishes a 'static binding' from a 'dynamic binding' in terms of its timing and persistence?",
+      "Answers": {
+        "a": "Static binding occurs during execution; dynamic binding occurs before runtime.",
+        "b": "Static binding occurs before runtime and can change; dynamic binding occurs during execution and is fixed.",
+        "c": "Static binding occurs before runtime and remains unchanged; dynamic binding occurs during execution or can change during execution. [cite: 25, 26]",
+        "d": "Static binding is for types only; dynamic binding is for memory addresses only."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is a primary disadvantage of using implicit declarations for variable types, as seen in FORTRAN or Perl? [cite: 29]",
+      "Answers": {
+        "a": "Increased program writability.",
+        "b": "Enhanced code flexibility.",
+        "c": "Reduced reliability due to potential undetected typos creating new variables. [cite: 29]",
+        "d": "Compiler inefficiency due to type inference."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "One of the main disadvantages of dynamic type binding (e.g., in JavaScript) is:",
+      "Answers": {
+        "a": "Lack of flexibility for generic program units.",
+        "b": "Reduced execution cost due to no compile-time checks.",
+        "c": "Difficulty in detecting type errors by the compiler. [cite: 31]",
+        "d": "Incompatibility with type inferencing systems."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which category of variables by lifetime is characterized by being bound to memory cells before execution begins and remaining so throughout, offering efficiency but lacking support for recursion? [cite: 33]",
+      "Answers": {
+        "a": "Stack-dynamic variables",
+        "b": "Explicit heap-dynamic variables",
+        "c": "Static variables [cite: 33]",
+        "d": "Implicit heap-dynamic variables"
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "A significant disadvantage of stack-dynamic variables, despite their allowance for recursion, is that:",
+      "Answers": {
+        "a": "They do not conserve storage.",
+        "b": "Their allocation and deallocation overhead is negligible.",
+        "c": "Subprograms using them cannot be history sensitive. [cite: 36]",
+        "d": "They require explicit deallocation by the programmer."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which characteristic is specific to 'implicit heap-dynamic' variables (e.g., in APL, Perl strings/arrays)?",
+      "Answers": {
+        "a": "They are referenced only through pointers or references.",
+        "b": "Their allocation and deallocation are caused by assignment statements. [cite: 39, 40]",
+        "c": "They offer maximum efficiency due to static attribute binding.",
+        "d": "They are primarily managed using `new` and `delete` directives."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "What is 'coercion' in the context of type checking?",
+      "Answers": {
+        "a": "The application of an operator to an operand of an inappropriate type.",
+        "b": "An explicit type conversion specified by the programmer.",
+        "c": "Automatic conversion of an operand to a compatible type, generated by the compiler. [cite: 41]",
+        "d": "A language rule that prevents any type conversions."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Why is C++ considered not to be strongly typed, according to the provided text?",
+      "Answers": {
+        "a": "It does not support type inferencing.",
+        "b": "It uses dynamic type binding for all variables.",
+        "c": "Parameter type checking can be avoided, and its unions are not type checked. [cite: 44, 45]",
+        "d": "It has no form of coercion."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is the impact of coercion rules on the effectiveness of strong typing in a language like Java compared to Ada, as per the text? [cite: 46]",
+      "Answers": {
+        "a": "Coercion rules significantly strengthen Java's strong typing beyond Ada's.",
+        "b": "Java's coercion rules make its strong typing more effective than Ada's.",
+        "c": "Despite having fewer assignment coercions than C++, Java's strong typing is still considered far less effective than that of Ada. [cite: 46]",
+        "d": "Coercion has no impact on the perceived strength of typing."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is a major restriction of 'name type compatibility'?",
+      "Answers": {
+        "a": "It is very difficult to implement.",
+        "b": "Two variables are compatible if their underlying structures are identical, regardless of type names.",
+        "c": "Subranges of integer types are not considered compatible with integer types. [cite: 47]",
+        "d": "It allows for more flexible parameter passing than structure type compatibility."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which of these scenarios poses a challenge or ambiguity for 'structure type compatibility' rules, according to the text?",
+      "Answers": {
+        "a": "Two integer variables declared with the same type name.",
+        "b": "Two array types being compatible if they are the same except that the subscript ranges are different (e.g., [1..10] and [0..9]). [cite: 50, 51]",
+        "c": "Requiring formal parameters to be of the exact same type name as actual parameters.",
+        "d": "Inability to compare records with different field names if their structures are otherwise identical."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "In a language with static scoping, if a variable is referenced, how is its declaration typically found?",
+      "Answers": {
+        "a": "By searching back through the chain of subprogram calls.",
+        "b": "By looking only at global declarations.",
+        "c": "By searching locally, then in increasingly larger enclosing static scopes. [cite: 54]",
+        "d": "By relying on the type of the variable to determine its scope."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What problem does the text suggest is often encouraged by static scoping rules when modifications require data access across separated modules? [cite: 61]",
+      "Answers": {
+        "a": "The overuse of recursion.",
+        "b": "The creation of many global variables. [cite: 61]",
+        "c": "A reduction in program readability.",
+        "d": "An increase in dynamic type binding."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "Consider the example on page 38[cite: 63]: MAIN calls SUB1, SUB1 calls SUB2, and SUB2 references 'x'. If MAIN declares 'x' and SUB1 also declares its own 'x', which 'x' is referenced by SUB2 under dynamic scoping rules?",
+      "Answers": {
+        "a": "MAIN's x",
+        "b": "SUB1's x [cite: 64]",
+        "c": "SUB2 would require its own declaration of x",
+        "d": "It depends on whether x is a static or dynamic variable"
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "A primary disadvantage of dynamic scoping, despite its potential convenience, is:",
+      "Answers": {
+        "a": "Its incompatibility with recursive subprograms.",
+        "b": "Its computational overhead at compile time.",
+        "c": "Poor program readability. [cite: 64]",
+        "d": "The inability to access non-local variables."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "Which example best illustrates the difference between scope and lifetime, as discussed in the chapter? [cite: 65]",
+      "Answers": {
+        "a": "A global variable in any program.",
+        "b": "A local variable in a non-recursive function.",
+        "c": "A static variable in a C or C++ function. [cite: 65]",
+        "d": "A variable in a language with dynamic scoping."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "How is the referencing environment of a statement defined in a dynamic-scoped language?",
+      "Answers": {
+        "a": "The local variables plus all visible variables in all enclosing static scopes.",
+        "b": "Only the local variables declared within the statement's immediate block.",
+        "c": "The local variables plus all visible variables in all currently active subprograms. [cite: 66]",
+        "d": "All global variables and any variables passed as parameters."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "What is a 'manifest constant' according to the text?",
+      "Answers": {
+        "a": "A named constant whose value is bound dynamically at runtime.",
+        "b": "A variable that can change its value multiple times.",
+        "c": "A named constant whose value is bound statically. [cite: 67]",
+        "d": "A constant that is visible in all scopes."
+      },
+      "Correct Answer": "c"
+    },
+    {
+      "Question": "When does variable initialization occur?",
+      "Answers": {
+        "a": "Only after the variable has been used in an operation.",
+        "b": "At the time the variable is bound to storage. [cite: 68]",
+        "c": "During language design time.",
+        "d": "Exclusively for global variables at load time."
+      },
+      "Correct Answer": "b"
+    },
+    {
+      "Question": "If a language uses dynamic type binding and implicit heap-dynamic variables, what is a likely combination of characteristics and consequences?",
+      "Answers": {
+        "a": "High efficiency, strong compile-time error detection, and lack of flexibility.",
+        "b": "Reduced flexibility, all attributes bound statically, and efficient direct addressing.",
+        "c": "Maximum flexibility, but potentially inefficient due to all attributes being dynamic and loss of compile-time error detection. [cite: 31, 39, 40]",
+        "d": "Static storage allocation, type errors always detected at compile-time, and no need for runtime type checking."
+      },
+      "Correct Answer": "c"
+    }
+  ]
+}
